@@ -41,13 +41,13 @@ return [
         'getting_started',
         [
             'type' => 'collection',
-            'collection' => 'articles',
-            'width' => 50,
-            'limit' => 10
+            'collection' => 'interiors',
+            'width' => 'half',
         ],
         [
-            'type' => 'updater',
-            'width' => 50,
+            'type' => 'collection',
+            'collection' => 'press',
+            'width' => 'half',
         ],
     ],
 
@@ -57,11 +57,16 @@ return [
     |--------------------------------------------------------------------------
     |
     | When a date is encountered throughout the Control Panel, it will be
-    | rendered in the following format. Any PHP date variables are permitted.
+    | rendered in the following format unless overridden in specific
+    | fields, and so on. Any PHP date variables are permitted.
+    |
+    | This takes precedence over the date_format in system.php.
+    |
+    | https://www.php.net/manual/en/function.date.php
     |
     */
 
-    'date_format' => 'Y-m-d',
+    'date_format' => 'Y/n/d',
 
     /*
     |--------------------------------------------------------------------------

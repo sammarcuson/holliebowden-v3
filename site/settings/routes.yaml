@@ -1,0 +1,16 @@
+routes:
+  /login:
+    template: login
+    title: Login
+  /interiors:
+    template: projects/index
+    title: Interiors
+  /press:
+    template: press/index
+    title: Press
+collections:
+  interiors: '/interiors/{slug}'
+  press: '/press/{slug}'
+taxonomies:
+  type: '/interiors/{slug}'
+  template: projects/all

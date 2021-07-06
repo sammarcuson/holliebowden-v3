@@ -6,24 +6,71 @@ sections:
       -
         handle: title
         field:
-          character_limit: 0
           type: text
-          localizable: false
-          display: Title
+          width: 66
+          localizable: true
       -
-        handle: content
+        handle: slug
         field:
-          restrict: false
-          automatic_line_breaks: true
-          automatic_links: false
-          escape_markup: true
-          smartypants: false
-          type: markdown
-          localizable: false
-          display: Content
+          type: text
+          width: 33
+      -
+        handle: display-title
+        field:
+          type: toggle
+          display: 'Display Title'
+          instructions: 'turn off to hide the title from the page output.'
+          default: true
+          width: 33
       -
         handle: template
         field:
           type: template
-          localizable: false
-          display: Template
+          display: 'Page Layout'
+      -
+        handle: page_content
+        field:
+          type: bard
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+          style: sans
+          spellcheck: true
+          allow_source: true
+          allow_internal_links: true
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          semantic_elements: false
+          restrict_assets: false
+          sets:
+            simple_image:
+              display: 'simple image'
+              fields:
+                -
+                  handle: image
+                  field:
+                    type: assets
+                    container: main
+                    folder: Pages
+                    restrict: false
+                    display: Image
+                    max_files: 1
+                -
+                  handle: width
+                  field:
+                    type: radio
+                    options:
+                      normal: Normal
+                      wide: Wide
+                    inline: true
+                    display: Width
+          display: 'Page Content'
+taxonomies: true

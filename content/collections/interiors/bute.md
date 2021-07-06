@@ -1,0 +1,27 @@
+title: 'Isle of Bute'
+location: Scotland
+publish_date: '2019-10-08'
+description: |-
+  <p>Residential farmhouse project on The Isle of Bute, Western Scotland. Completed in 2020.
+  </p>
+images:
+  - projects/bute/finals-3.jpg
+  - projects/bute/finals-5-1607443382.jpg
+  - projects/bute/finals-2.jpg
+  - projects/bute/finals-16.jpg
+  - projects/bute/finals-24.jpg
+  - projects/bute/finals-12.jpg
+  - projects/bute/finals-17.jpg
+  - projects/bute/finals-18.jpg
+  - projects/bute/finals-9.jpg
+  - projects/bute/finals-14.jpg
+  - projects/bute/finals-11.jpg
+  - projects/bute/finals-7.jpg
+  - projects/bute/finals-6.jpg
+  - projects/bute/finals-1.jpg
+  - projects/bute/finals-23.jpg
+  - projects/bute/finals-20.jpg
+type:
+  - residential
+id: f75ebf94-b5ef-4939-a500-deab6dc97065
+blueprint: project

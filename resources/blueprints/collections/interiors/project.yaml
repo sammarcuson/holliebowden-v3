@@ -1,0 +1,70 @@
+title: Project
+sections:
+  main:
+    display: Details
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          width: 66
+          localizable: true
+      -
+        handle: slug
+        field:
+          type: text
+          width: 33
+      -
+        handle: location
+        field:
+          type: text
+          width: 66
+          localizable: true
+      -
+        handle: publish_date
+        field:
+          type: date
+          display: 'Publish Date'
+          allow_blank: false
+          allow_time: false
+          earliest_date: 'January 1, 2018'
+      -
+        handle: type
+        field:
+          type: terms
+          display: 'Project Type'
+          width: 50
+          validate: required
+          taxonomies:
+            - type
+      -
+        handle: description
+        field:
+          type: bard
+          display: Description
+          save_html: true
+          buttons:
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - html
+            - quote
+            - codeblock
+            - h1
+            - h2
+            - h3
+            - h4
+            - h5
+            - h6
+            - anchor
+  images:
+    display: Images
+    fields:
+      -
+        handle: images
+        field:
+          type: assets
+          display: Images
+          container: main
+          folder: projects

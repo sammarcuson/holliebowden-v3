@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "laravel-elixir": "^6.0.0-15"
+  },
+  "dependencies": {
+    "lightslider": "^1.1.6",
+    "tachyons-sass": "^4.9.5"
+  }
+}

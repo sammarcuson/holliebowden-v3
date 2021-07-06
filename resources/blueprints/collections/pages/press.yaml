@@ -1,0 +1,33 @@
+title: Press
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          display: Publication
+          width: 66
+          localizable: true
+      -
+        handle: slug
+        field:
+          type: text
+          width: 33
+      -
+        handle: date
+        field:
+          type: date
+          display: 'Publication Date'
+          allow_blank: false
+          allow_time: false
+          earliest_date: 'January 1, 2018'
+      -
+        handle: images
+        field:
+          type: assets
+          display: Images
+          container: main
+          folder: press
+taxonomies: false

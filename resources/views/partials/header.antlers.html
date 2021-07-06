@@ -1,0 +1,18 @@
+<header class="absolute">
+
+  <nav class="ma-1-3-rem fw3">
+    <a href="/about" class="fadeOut {{ if slug == "about" }}i{{ /if }} louize-bold ttl black link mr3 fw3">About</a>
+    <a href="/interiors" class="fadeOut {{ if segment_1 == "interiors" }}i{{ /if }} louize-bold ttl black link mr3">Interiors</a>
+    <a href="/press" class="fadeOut {{ if segment_1 == "press" }}i{{ /if }} louize-bold ttl black link mr3">Press</a>
+  </nav>
+
+  <!-- <nav class="ma3 fw1">
+    {{ if url == "/work" || slug == "commercial" || slug == "residential" }}
+    <a href="/work" class="{{ if segment_1 == "work" && segment_2 =="" }}i{{ /if }} louize-display ttl black link mr3 fw1">All</a>
+    {{ taxonomy:type }}
+    <a href="{{ url }}" class="{{ if segment_2 == slug }}i{{ /if }} louize-display ttl black link mr3">{{ title }}</a>
+    {{ /taxonomy:type }}
+    {{ /if }}
+  </nav> -->
+
+</header>

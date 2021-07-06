@@ -1,0 +1,19 @@
+title: 'Tanner Krolle, Retail Space'
+location: London
+publish_date: '2019-10-01'
+description: |-
+  <p>Photography: <a href="http://www.genevievelutkinstudio.com/" target="_blank">genevieve lutkin</a>
+  </p>
+images:
+  - projects/tanner-krolle/tk-final-4-2.jpg
+  - projects/tanner-krolle/tk-final-3.jpg
+  - projects/tk-final-extra-1.jpg
+  - projects/tanner-krolle/tk-final-12.jpg
+  - projects/tanner-krolle/tk-final-13.jpg
+  - projects/tanner-krolle/tk-final-11-1.jpg
+  - projects/tanner-krolle/tk-final-15.jpg
+  - projects/tanner-krolle/tk-final-18.jpg
+type:
+  - commercial
+id: b54f30a1-9868-4751-8236-eed015652883
+blueprint: project

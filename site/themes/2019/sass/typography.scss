@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+@font-face {
+  font-family: 'Louize-Bold';
+  font-weight: normal;
+  src: url('../fonts/louize-bold.woff')
+  format('woff');
+}
+@font-face {
+  font-family: 'Louize-Display';
+  font-weight: normal;
+  src: url('../fonts/louize-display.woff')
+  format('woff');
+}
+.louize-display {
+  font-family: 'Louize-Display';
+}
+.louize-bold {
+  font-family: 'Louize-Bold';
+}
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+.karla {
+  font-family: 'Karla', sans-serif;
+}
+h1 {
+  font-family: 'Louize-Display';
+  font-weight: 100;
+}
+p {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.02rem;
+  margin-top: 0;
+}
+blockquote {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.05rem;
+  margin-left: 33%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 0;
+}
+b {
+  font-weight: bold;
+}
+p a {
+  text-decoration: underline;
+  color: black;
+}

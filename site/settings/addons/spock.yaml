@@ -1,0 +1,10 @@
+environments:
+  - production
+git_push: true
+git_username: Spock
+commands_before:
+  - 'git pull'
+commands:
+  - 'git add {{ full_path }}'
+  - 'git commit -m ''{{ url }} updated by {{ committer:username }}'''
+  - 'git push'

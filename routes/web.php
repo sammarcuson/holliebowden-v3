@@ -16,3 +16,18 @@ use Illuminate\Support\Facades\Route;
 // Route::statamic('example', 'example-view', [
 //    'title' => 'Example'
 // ]);
+
+
+Route::statamic('login', 'login', [
+    'title' => 'Login',
+]);
+Route::statamic('interiors', 'projects.index', [
+    'title' => 'Interiors',
+]);
+Route::statamic('press', 'press.index', [
+    'title' => 'Press',
+]);
+
+Route::statamic('/', 'home', [
+    'title' => 'Home',
+]);

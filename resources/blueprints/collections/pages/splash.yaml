@@ -1,0 +1,14 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: background_image
+        field:
+          type: assets
+          display: 'Background Image'
+          container: main
+          folder: backgrounds
+          max_files: 1
+taxonomies: true
+title: Splash

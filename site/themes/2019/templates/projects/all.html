@@ -1,0 +1,17 @@
+<div class="center mt-5-rem">
+  <section class="cf w-100">
+
+      {{ collection from="interiors" show_unpublished="false" sort="order:asc" }}
+      <article class="fl w-100 w-50-m w-third-ns pa3-ns mb3 mb0-ns">
+        <a href="{{ url }}" class="ph2 ph0-ns link db tc">
+        <div class="aspect-ratio aspect-ratio--4x3">
+          <img style="background-image:url({{ glide:images:0 width="600" height="600" fit="cover" fm="jpg" }});" class="db bg-center cover aspect-ratio--object" />
+        </div>
+          <h3 class="f6 fw1 mt2 mb0 black-90">{{ title }}{{ if location }}, {{ location }}{{ /if }}</h3>
+        </a>
+      </article>
+
+      {{ /collection }}
+
+  </section>
+</div>

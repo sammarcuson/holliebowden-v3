@@ -1,0 +1,47 @@
+locales:
+  en:
+    name: English
+    full: en_US
+    url: /
+timezone: UTC
+date_format: y.m.d
+default_extension: md
+filesystems:
+  content:
+    driver: local
+    root: site/content
+  storage:
+    driver: local
+    root: site/storage
+  users:
+    driver: local
+    root: site/users
+  themes:
+    driver: local
+    root: site/themes
+    url: /site/themes
+app_key: r2ba4utHZVpsXA9lB9rE9Mg5ZZRiLTxl
+redactor:
+  -
+    name: Standard
+    settings:
+      buttons:
+        - formatting
+        - bold
+        - italic
+        - link
+        - unorderedlist
+        - orderedlist
+        - html
+  -
+    name: Basic
+    settings:
+      buttons:
+        - bold
+        - italic
+yaml_parser: symfony
+send_powered_by_header: true
+ensure_unique_ids: true
+license_key: adef4c82-f29e-4bd8-9945-894c84f2f4f6
+csrf_exclude: {  }
+php_max_memory_limit: null

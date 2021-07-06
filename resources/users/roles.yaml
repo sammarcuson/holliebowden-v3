@@ -1,4 +1,36 @@
-# admin:
-#   title: Administrator
-#   permissions:
-#     - super
+admin:
+  title: Admin
+  slug: admin
+  permissions:
+    - super
+editor:
+  title: Editor
+  slug: editor
+  permissions:
+    - 'access cp'
+    - 'content:view_drafts_on_frontend'
+    - 'view pages entries'
+    - 'edit pages entries'
+    - 'create pages entries'
+    - 'publish pages entries'
+    - 'delete pages entries'
+    - 'reorder pages entries'
+    - 'view interiors entries'
+    - 'edit interiors entries'
+    - 'reorder interiors entries'
+    - 'create interiors entries'
+    - 'publish interiors entries'
+    - 'delete interiors entries'
+    - 'view press entries'
+    - 'edit press entries'
+    - 'reorder press entries'
+    - 'create press entries'
+    - 'publish press entries'
+    - 'delete press entries'
+    - 'edit global globals'
+    - 'view main assets'
+    - 'edit main assets'
+    - 'move main assets'
+    - 'rename main assets'
+    - 'upload main assets'
+    - 'delete main assets'

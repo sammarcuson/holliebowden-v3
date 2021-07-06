@@ -1,0 +1,28 @@
+title: 'San Carlos'
+location: Ibiza
+publish_date: '2019-10-08'
+description: |-
+  <p>Country estate and guest villas set in tropical gardens, San Carlos, Ibiza.<br>430500 sq ft estate and grounds
+  </p>
+  <p>8 bedrooms with en suites, sauna, gym, games room and cinema <br>Photography: <a href="http://www.genevievelutkinstudio.com/" target="_blank">genevieve lutkin</a>
+  </p>
+images:
+  - projects/san-carlos/san-carlos--ibiza-1_1200.jpg
+  - projects/san-carlos/san-carlos--ibiza-2_1200.jpg
+  - projects/san-carlos/san-carlos--ibiza-3_1200.jpg
+  - projects/san-carlos/san-carlos--ibiza-4_801.jpg
+  - projects/san-carlos/san-carlos--ibiza-5_801.jpg
+  - projects/san-carlos/san-carlos--ibiza-6_801.jpg
+  - projects/san-carlos/san-carlos--ibiza-7_801.jpg
+  - projects/san-carlos/san-carlos--ibiza-8_1200.jpg
+  - projects/san-carlos/san-carlos--ibiza-9_1200.jpg
+  - projects/san-carlos/harringdon-9-3_1200.jpg
+  - projects/san-carlos/san-carlos--ibiza-10_801.jpg
+  - projects/san-carlos/bluebay-21_1600_c.jpg
+  - projects/san-carlos/san-carlos--ibiza-11_801.jpg
+  - projects/san-carlos/san-carlos--ibiza-13_1200.jpg
+  - projects/san-carlos/san-carlos--ibiza-14_1200.jpg
+type:
+  - residential
+id: 353a2552-d896-4bd1-b72a-8acb4bf28a96
+blueprint: project

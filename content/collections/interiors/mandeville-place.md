@@ -1,0 +1,29 @@
+title: 'Mandeville Place'
+location: London
+publish_date: '2019-10-08'
+description: |-
+  <p>Commercial Offices, Marylebone, London
+  </p>
+images:
+  - projects/mandeville-place/mandeville34.jpg
+  - projects/mandeville-place/mandeville6.jpg
+  - projects/mandeville-place/mandeville1.jpg
+  - projects/mandeville-place/mandeville5.jpg
+  - projects/mandeville-place/mandeville4.jpg
+  - projects/mandeville-place/mandeville13.jpg
+  - projects/mandeville-place/mandeville8.jpg
+  - projects/mandeville-place/mandeville11.jpg
+  - projects/mandeville-place/mandeville39.jpg
+  - projects/mandeville-place/mandeville9.jpg
+  - projects/mandeville-place/mandeville7-1623314738.jpg
+  - projects/mandeville-place/mandeville15.jpg
+  - projects/mandeville-place/mandeville12-crop.jpg
+  - projects/mandeville-place/mandeville17.jpg
+  - projects/mandeville-place/mandeville26.jpg
+  - projects/mandeville-place/mandeville32.jpg
+  - projects/mandeville-place/mandeville16.jpg
+  - projects/mandeville-place/mandeville37.jpg
+id: 872ef186-ea05-4682-91b1-087204cff9d0
+type:
+  - commercial
+blueprint: project

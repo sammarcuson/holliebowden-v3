@@ -1,0 +1,12 @@
+title: 'Hollywood Hills'
+location: 'Los Angeles'
+publish_date: '2019-10-08'
+description: |-
+  <p>3 bedroom Spanish Finca in the Hollywood Hills.
+  </p>
+images:
+  - projects/hollywood-hills/rob-twigs-la--dragged_1600_c.jpg
+id: 6c189442-1ac3-44a1-94ee-8669830f940a
+type:
+  - residential
+blueprint: project
