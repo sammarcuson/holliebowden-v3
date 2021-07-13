@@ -1,4 +1,9 @@
 title: Pages
-route: '{{ parent_uri }}/{{ slug }}'
+template: page
+layout: layout
+revisions: false
+route: '{parent_uri}/{slug}'
+date: true
+sort_dir: desc
 structure:
   root: true

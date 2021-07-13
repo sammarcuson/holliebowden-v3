@@ -1,9 +1,0 @@
-title: Interiors
-order: number
-fieldset: project
-template: projects/single
-columns:
-  - value: title
-    link: true
-  - value: type
-  - value: publish_date

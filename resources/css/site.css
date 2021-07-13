@@ -1,12 +1,60 @@
 @import url('https://rsms.me/inter/inter.css');
 
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+
+@font-face {
+  font-family: 'Louize-Bold';
+  font-weight: normal;
+  src: url("../fonts/louize-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Louize-Display';
+  font-weight: normal;
+  src: url("../fonts/louize-display.woff") format("woff");
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Louize-Display';
+  font-weight: 100;
+  src: url("../fonts/louize-bold.woff") format("woff");
+}
+
+
 body {
     @apply text-gray-800;
     font-feature-settings: "frac" 1;
+    font-family: 'Karla', sans-serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1 {
     @apply text-4xl font-bold leading-none mb-16;
+}
+
+p {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.02rem;
+  margin-top: 0;
+}
+blockquote {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.05rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 0;
+  @screen md {
+    margin-left: 33%;
+  }
+}
+b {
+  font-weight: bold;
 }
 
 .content {
@@ -43,7 +91,7 @@ h1 {
     }
 
     a {
-        @apply text-teal font-medium underline;
+        @apply font-medium underline;
         &:hover {
             @apply text-black;
         }
@@ -68,7 +116,7 @@ h1 {
     > ul li > code,
     > ol li *:not(pre) code,
     > ol li > code {
-        @apply inline-block bg-gray-800 text-white text-sm p-1 leading-none whitespace-no-wrap font-mono align-baseline;
+        @apply inline-block bg-gray-800 text-white text-sm p-1 leading-none whitespace-nowrap font-mono align-baseline;
     }
 
     > pre, pre&, > ul li pre, > ol li pre {
@@ -107,4 +155,10 @@ h1 {
             @apply text-3xl mt-16 py-6;
         }
     }
+}
+.h-screen-75 {
+  height: 75vh;
+}
+@screen md {
+
 }

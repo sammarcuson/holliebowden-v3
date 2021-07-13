@@ -1,17 +1,17 @@
-<div class="vh-75-imp-ns mt5">
-  <div class="relative absolute-800 top-75vh-800 top ml-50-ns w-50-ns w-third-l mt4 mt5-5-800 pb3 ml-1-3-rem pr3-m">
-    <h1 class="db cf f6 mb0 karla">{{ title }}{{ if location }}, {{ location }}{{ /if }}</h1>
+<div class="h-screen-75 mt-0">
+  <div class="relative md:fixed bottom-12 right-16 md:bg-black md:p-12 md:z-10 md:text-offwhite md:text-base md:w-1/3">
+    <h1 class="block f6 mb-2 karla text-base leading-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}</h1>
     {{ description }}
   </div>
-  <div id="loading" class="blink w-100 h-100 dn db-ns">
-    <span class="w-100 h-100 flex tc items-center justify-center f7">Loading project</span>
+  <div id="loading" class="blink inset-0 hidden md:block">
+    <span class="w-full h-100 flex tc items-center justify-center f7">Loading project</span>
   </div>
-  <div id="content-slider" class="o-0-800 content-slider vh-75-imp-ns">
+  <div id="content-slider" class="o-0-800 content-slider h-screen-75">
 
     {{ assets:images }}
         <img
         data-index={{ index }}
-        class="db mh-100 mb3 mb0-l h-100-ns"
+        class="block max-h-full mb-4 lg:mb-0 md:h-full"
         src="{{ glide:url fm="jpg" height="1000" }}"
         alt="{{ alt }}"
         />

@@ -13,7 +13,7 @@ page_content:
       </p><blockquote><p>“I am drawn to natural pieces and finishes and artisan craftsmanship, I believe deeply in the integration of old and new, creating a timelessness. Taking into consideration the context and architectural history of a project is essential for my design process. I am forever sourcing antiques and have an eye for extraordinary pieces that might otherwise go unseen or unloved. Moreover, I see myself as a curator of spaces, as much as I do an interior designer.”</p></blockquote>
   -
     type: simple_image
-    image: Pages/profile-1.jpg
+    image: pages/profile-1.jpg
     width: wide
   -
     type: text

@@ -1,18 +1,64 @@
-<header class="absolute">
+<header>
+  <nav class="mb-12" x-data="{ showMobileNav: false }">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-end">
+          <div class="flex-shrink-0 flex items-center">
+            <h1 class="uppercase block leading-none m-0 text-lg text-black"><a href="/">Hollie<br />Bowden</a></h1>
+          </div>
+          <div class="hidden sm:ml-6 sm:flex space-x-6 font-louizeDisplay">
+            <!-- Current: " text-gray-900", Default: "border-transparent text-black hover:border-gray-800 hover:text-gray-700" -->
+            <a href="/about" class="border-transparent text-black inline-flex items-center px-1 pt-1 border-b-2 text-lg font-semibold leading-none">
+              about
+            </a>
+            <a href="/interiors" class="border-transparent text-black hover:border-gray-800 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-lg font-semibold leading-none">
+              interiors
+            </a>
+            <a href="/press" class="border-transparent text-black hover:border-gray-800 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-lg font-semibold leading-none">
+              press
+            </a>
+          </div>
+        </div>
+        <div class="-mr-2 flex items-center sm:hidden z-10">
+          <!-- Mobile menu button -->
+          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
 
-  <nav class="ma-1-3-rem fw3">
-    <a href="/about" class="fadeOut {{ if slug == "about" }}i{{ /if }} louize-bold ttl black link mr3 fw3">About</a>
-    <a href="/interiors" class="fadeOut {{ if segment_1 == "interiors" }}i{{ /if }} louize-bold ttl black link mr3">Interiors</a>
-    <a href="/press" class="fadeOut {{ if segment_1 == "press" }}i{{ /if }} louize-bold ttl black link mr3">Press</a>
+              Heroicon name: outline/menu
+
+              Menu open: "hidden", Menu closed: "block"
+            -->
+
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" aria-controls="mobile-menu" @click="showMobileNav = true" x-bind:class="{'hidden': showMobileNav}">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!--
+              Icon when menu is open.
+
+              Heroicon name: outline/x
+
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" aria-controls="mobile-menu" x-bind:class="{'block': showMobileNav, 'hidden': ! showMobileNav}" @click="showMobileNav = false" x-cloak>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden absolute inset-0 bg-offwhite transition-opacity opacity-50 pt-12" id="mobile-menu" @click.away="showMobileNav = false" x-bind:class="{ 'hidden opacity-50': ! showMobileNav }">
+      <div class="pt-2 pb-3 space-y-1 text-center font-louizeDisplay">
+        <!-- Current: "bg-indigo-50  text-black", Default: "border-transparent text-black hover:bg-gray-50 hover:border-gray-800 hover:text-gray-700" -->
+        <a href="/about" class="text-black block pl-3 pr-4 py-2 border-l-4 text-2xl font-medium lowercase">About</a>
+        <a href="interiors/" class="text-black hover:bg-gray-50 hover:border-gray-800 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-2xl font-medium lowercase">Interiors</a>
+        <a href="/press" class="text-black hover:bg-gray-50 hover:border-gray-800 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-2xl font-medium lowercase">Press</a>
+      </div>
+    </div>
   </nav>
 
-  <!-- <nav class="ma3 fw1">
-    {{ if url == "/work" || slug == "commercial" || slug == "residential" }}
-    <a href="/work" class="{{ if segment_1 == "work" && segment_2 =="" }}i{{ /if }} louize-display ttl black link mr3 fw1">All</a>
-    {{ taxonomy:type }}
-    <a href="{{ url }}" class="{{ if segment_2 == slug }}i{{ /if }} louize-display ttl black link mr3">{{ title }}</a>
-    {{ /taxonomy:type }}
-    {{ /if }}
-  </nav> -->
 
 </header>
