@@ -1,6 +1,6 @@
 title: 'es Cubells'
 location: Ibiza
-publish_date: '2019-09-30'
+
 description: |-
   <p>Villa and estate, es Cubells, Ibiza. 13000 sqft, 7 bedrooms, staff quarters, gymnasium, health suite and spa.
   </p>

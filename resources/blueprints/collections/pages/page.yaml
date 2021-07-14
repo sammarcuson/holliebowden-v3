@@ -7,13 +7,20 @@ sections:
         handle: title
         field:
           type: text
+          required: true
           width: 66
           localizable: true
+          validate:
+            - required
       -
         handle: slug
         field:
           type: text
+          required: true
+          localizable: true
           width: 33
+          validate:
+            - required
       -
         handle: display-title
         field:
@@ -58,11 +65,14 @@ sections:
                   handle: image
                   field:
                     type: assets
-                    container: main
+                    container: assets
                     folder: Pages
-                    restrict: false
+                    restrict: true
                     display: Image
                     max_files: 1
+                    listable: hidden
+                    mode: grid
+                    allow_uploads: true
                 -
                   handle: width
                   field:
@@ -73,4 +83,30 @@ sections:
                     inline: true
                     display: Width
           display: 'Page Content'
-taxonomies: true
+          listable: hidden
+          always_show_set_button: false
+          save_html: false
+          toolbar_mode: fixed
+          reading_time: false
+          fullscreen: true
+          enable_input_rules: true
+          enable_paste_rules: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

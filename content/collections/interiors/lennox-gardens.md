@@ -1,6 +1,6 @@
 title: 'Lennox Gardens'
 location: London
-publish_date: '2019-10-08'
+
 description: |-
   <p>Headquarters of Heavensake<br>Private chambers, Chelsea, London<br>including reception, office and entertainment space<br>Photography: <a href="http://www.genevievelutkinstudio.com/" target="_blank">genevieve lutkin</a>
   </p>

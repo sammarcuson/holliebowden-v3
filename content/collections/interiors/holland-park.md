@@ -1,6 +1,6 @@
 title: 'Holland Park'
 location: London
-publish_date: '2019-10-08'
+
 description: |-
   <p>ARCHIVED / PROJECT CLOSED
   </p>

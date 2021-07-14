@@ -7,27 +7,26 @@ sections:
         handle: title
         field:
           type: text
+          required: true
           width: 66
           localizable: true
+          validate:
+            - required
       -
         handle: slug
         field:
           type: text
+          required: true
+          localizable: true
           width: 33
+          validate:
+            - required
       -
         handle: location
         field:
           type: text
           width: 66
           localizable: true
-      -
-        handle: publish_date
-        field:
-          type: date
-          display: 'Publish Date'
-          allow_blank: false
-          allow_time: false
-          earliest_date: 'January 1, 2018'
       -
         handle: type
         field:
@@ -68,3 +67,22 @@ sections:
           display: Images
           container: main
           folder: projects
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

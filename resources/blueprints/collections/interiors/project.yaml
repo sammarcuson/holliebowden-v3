@@ -7,13 +7,20 @@ sections:
         handle: title
         field:
           type: text
+          required: true
           width: 66
           localizable: true
+          validate:
+            - required
       -
         handle: slug
         field:
           type: text
+          required: true
+          localizable: true
           width: 33
+          validate:
+            - required
       -
         handle: location
         field:
@@ -32,11 +39,12 @@ sections:
         handle: type
         field:
           type: terms
-          display: 'Project Type'
-          width: 50
-          validate: required
           taxonomies:
             - type
+          display: 'Project Type'
+          mode: select
+          width: 50
+          validate: required
       -
         handle: description
         field:
@@ -66,5 +74,9 @@ sections:
         field:
           type: assets
           display: Images
-          container: main
+          container: assets
           folder: projects
+          listable: hidden
+          mode: grid
+          restrict: false
+          allow_uploads: true

@@ -27,7 +27,3 @@ Route::statamic('interiors', 'projects.index', [
 Route::statamic('press', 'press.index', [
     'title' => 'Press',
 ]);
-
-Route::statamic('/', 'home', [
-    'title' => 'Home',
-]);

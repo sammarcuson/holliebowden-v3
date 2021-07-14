@@ -1,6 +1,5 @@
 title: '​Dunloe Avenue'
 location: 'North London'
-publish_date: '2020-03-26'
 description: |-
   <p>3 bedroom, 2 bathroom with loft extension - <em>completing Summer 2021</em>
   </p>

@@ -1,6 +1,6 @@
 title: 'San Carlos'
 location: Ibiza
-publish_date: '2019-10-08'
+
 description: |-
   <p>Country estate and guest villas set in tropical gardens, San Carlos, Ibiza.<br>430500 sq ft estate and grounds
   </p>

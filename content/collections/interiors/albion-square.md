@@ -1,6 +1,5 @@
 title: 'Albion Square'
 location: Hackney
-publish_date: '2019-11-13'
 description: |-
   <p>4 bedroom, Town House, and private garden -<em> completing Spring 2021</em>
   </p>

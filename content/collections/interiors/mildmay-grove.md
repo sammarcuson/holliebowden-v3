@@ -1,6 +1,6 @@
 title: 'Mildmay Grove'
 location: Islington
-publish_date: '2019-10-08'
+
 description: |-
   <p>3 bedrooms, 2 bathrooms, reception, basement extension <br>a serene space, earthy decor in a peaceful palette: home to a healer - Mildmay Grove, Islington, London
   </p>

@@ -1,6 +1,6 @@
 title: 'Lowndes Square'
 location: Knightsbridge
-publish_date: '2020-03-26'
+
 description: |-
   <p>3 bedroom, 2 bathroom with 2 large reception rooms. -<em> completing Spring 2021</em>
   </p>

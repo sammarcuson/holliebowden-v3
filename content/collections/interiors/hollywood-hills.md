@@ -1,6 +1,6 @@
 title: 'Hollywood Hills'
 location: 'Los Angeles'
-publish_date: '2019-10-08'
+
 description: |-
   <p>3 bedroom Spanish Finca in the Hollywood Hills.
   </p>

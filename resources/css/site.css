@@ -159,6 +159,18 @@ b {
 .h-screen-75 {
   height: 75vh;
 }
-@screen md {
 
+.max-h-75 {
+  max-height: 75%;
+}
+
+
+/* Image slider cusomisations */
+
+.flex-start-end img:nth-child(odd) {
+  @apply self-start;
+}
+
+#content-slider {
+  height:100vh!important;
 }

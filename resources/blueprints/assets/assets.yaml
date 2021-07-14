@@ -1,0 +1,25 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: alt
+        field:
+          type: text
+          display: 'Alt Text'
+          instructions: 'Description of the image'
+          listable: hidden
+          input_type: text
+          antlers: false
+      -
+        handle: image_display
+        field:
+          options:
+            fullsize: 'Full Size'
+            padding-md: 'Medium Size'
+          inline: false
+          cast_booleans: false
+          display: 'Image Display'
+          type: radio
+          icon: radio
+          listable: hidden

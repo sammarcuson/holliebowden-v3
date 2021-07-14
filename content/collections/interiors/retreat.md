@@ -1,6 +1,6 @@
 title: Retreat
 location: Ibiza
-publish_date: '2019-09-30'
+
 description: |-
   <p>Farmhouse retreat in the rural Ibizan countryside.<br>
   </p>

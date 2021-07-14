@@ -46,20 +46,20 @@ window.onload = function (event) {
       $("#content-slider").lightSlider({
         adaptiveHeight: false,
         // vertical:false,
-        verticalHeight: 100,
+        // verticalHeight:100,
         item: 1,
         autoWidth: true,
         slideMove: 1,
         // slidemove will be 1 if loop is true
-        slideMargin: 170,
+        slideMargin: 60,
         loop: false,
         keyPress: true,
         gallery: false,
         controls: true,
         pager: false,
         onSliderLoad: function onSliderLoad() {
-          $('#content-slider').removeClass('o-0-800');
-          $('#loading').removeClass('db-ns');
+          $('#content-slider').removeClass('hidden');
+          $('#loading').addClass('hidden');
         }
       });
       console.log('slider initiated');

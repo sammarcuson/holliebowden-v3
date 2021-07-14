@@ -1,6 +1,5 @@
 title: 'Cadogan Place'
 location: London
-publish_date: '2019-10-08'
 description: |-
   <p>Office Space, reception and meeting room, London.
   </p>
