@@ -27,3 +27,7 @@ Route::statamic('interiors', 'projects.index', [
 Route::statamic('press', 'press.index', [
     'title' => 'Press',
 ]);
+
+// Route::statamic('welcome', 'page-right-aligned', [
+//     'title' => 'Welcome',
+// ]);

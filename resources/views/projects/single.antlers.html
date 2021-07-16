@@ -1,12 +1,88 @@
 
-<div class="min-h-full h-screen w-full bg-fixed bg-no-repeat" style="background-image: url('/assets/backgrounds/cracked-paint.jpg'); background-repeat: no-repeat; min-height: 1000px;">
-123
+<div id="projectDetails" class="transition-all duration-1000 absolute left-10 right-10 top-36 md:top-auto md:left-auto md:right-16 md:bottom-16 p-12 md:w-1/3 z-10 bg-black text-offwhite">
+  <h1 class="block f6 mb-2 font-louizeDisplay text-2xl leading-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}</h1>
+  {{ description }}
+  {{ partial:projects/nav }}
 </div>
 
-<div class="relative min-h-screen w-screen">
-  <div class="right-16 bg-black md:p-12 text-offwhite md:w-1/3" style="height: 500px;">
-    <h1 class="block f6 mb-2 karla text-base leading-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}</h1>
-    {{ description }}
-    {{ partial:projects/nav }}
-  </div>
+<div class="w-full m-auto">
+  {{ assets:images }}
+
+    {{ if first }}
+    <div class="h-screen mb-12 z-0 js-show-on-scroll">
+      <div class="absolute inset-0 w-screen h-screen inset-0 bg-cover bg-norepeat" style="background-image: url('{{ glide:url fm="jpg" height="1400" fit="crop_focal" }}');">
+        <div class="hidden absolute bottom-8 w-full text-center opacity-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 m-auto animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width=".8" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+      </div>
+      {{ if overlay != "none" and overlay != null }}
+      <div class="absolute inset-0 {{ if overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ opacity }}">
+      </div>
+      {{ /if }}
+    </div>
+    {{ else }}
+    {{ /if }}
+  {{ /assets:images }}
 </div>
+
+<div class="w-full m-auto max-w-7xl">
+  {{ assets:images }}
+    {{ if ! first }}
+    <div class="{{ if image_display == "float-left" }}md:float-left md:w-1/2 {{ elseif image_display == "float-right" }}md:float-right md:w-1/2{{ else }}clear-both w-full m-auto{{ /if }} {{ if padding == "heavy" }}p-12 lg:p-32 lg:pt-12 {{ elseif padding == "none" }}px-0 py-12 {{ else }}p-12 {{ /if }} flex items-center js-show-on-scroll">
+      <img
+        data-index={{ index }}
+        class="block m-auto max-h-screen"
+        src="{{ glide:url fm="jpg" height="900" }}"
+        alt="{{ alt }}"
+      />
+    </div>
+    {{ else }}
+    {{ /if }}
+  {{ /assets:images }}
+</div>
+
+<script type="text/javascript">
+      // Initial state
+        var scrollPos = 0;
+        // console.log(scrollPos);
+        // adding scroll event
+        window.addEventListener('scroll', function(){
+          // detects new state and compares it with the new one
+          if ((document.body.getBoundingClientRect()).top < -80)
+            document.getElementById('projectDetails').classList.add('opacity-0'),
+            console.log("scrollposition is " + scrollPos);
+          else if ((document.body.getBoundingClientRect()).top > scrollPos)
+            document.getElementById('projectDetails').classList.remove('opacity-0'),
+            console.log("scrollposition is " + scrollPos);
+          else
+            console.log("scrollposition is " + scrollPos);
+          // saves the new position for iteration.
+          scrollPos = (document.body.getBoundingClientRect()).top;
+        });
+      </script>
+
+<script type="text/javascript">
+  const callback = function (entries) {
+  entries.forEach((entry) => {
+    console.log(entry);
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-fadeIn");
+    } else {
+      entry.target.classList.remove("animate-fadeIn");
+    }
+  });
+};
+
+const observer = new IntersectionObserver(callback);
+
+const targets = document.querySelectorAll(".js-show-on-scroll");
+targets.forEach(function (target) {
+  target.classList.add("opacity-0");
+  observer.observe(target);
+});
+
+
+</script>

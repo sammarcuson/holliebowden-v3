@@ -40,7 +40,7 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#e0dfd6">
 </head>
 
 
@@ -48,10 +48,24 @@
   {{ if ! segment_1 == "" }}
   {{ partial:header }}
   {{ /if }}
-  <main class="flex-auto">
+  <main class="flex-auto animate-fadeIn">
     {{ template_content }}
   </main>
   <footer>...</footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      $("a").click(function() {
+          $link = $(this).attr("href");
+          $("header").removeClass('animate-fadeIn');
+          $("main").removeClass('animate-fadeIn');
+          $("body").fadeOut(200);
+          setTimeout(function(){
+              window.location.replace($link);
+          },200);
+          return false;
+      });
+    })
+  </script>
 </body>
 
 </html>

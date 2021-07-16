@@ -1,4 +1,6 @@
-data: {  }
+data:
+  image_display: float-left
+  padding: normal
 size: 390540
 last_modified: 1625562243
 width: 801

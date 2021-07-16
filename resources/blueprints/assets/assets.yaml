@@ -15,11 +15,24 @@ sections:
         handle: image_display
         field:
           options:
-            fullsize: 'Full Size'
-            padding-md: 'Medium Size'
+            float-left: 'Float Left'
+            float-right: 'Float Right'
           inline: false
           cast_booleans: false
           display: 'Image Display'
+          type: radio
+          icon: radio
+          listable: hidden
+      -
+        handle: padding
+        field:
+          options:
+            none: None
+            normal: Normal
+            heavy: Heavy
+          inline: false
+          cast_booleans: false
+          display: Padding
           type: radio
           icon: radio
           listable: hidden

@@ -38,6 +38,15 @@ module.exports = {
     },
 
     extend: {
+      animation: {
+        fadeIn: "fadeIn 0.5s ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
+      },
       colors: {
           offwhite: '#e0dfd6',
           black: '#302e29',
@@ -60,7 +69,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ["motion-safe"]
+    },
   },
   plugins: [
 

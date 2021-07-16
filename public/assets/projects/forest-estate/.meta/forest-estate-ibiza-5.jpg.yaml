@@ -1,4 +1,5 @@
-data: {  }
+data:
+  image_display: float-left
 size: 320746
 last_modified: 1625562252
 width: 1000

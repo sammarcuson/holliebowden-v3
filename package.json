@@ -22,6 +22,7 @@
     },
     "dependencies": {
         "alpinejs": "^1.12.0",
-        "lightslider": "^1.1.6"
+        "lightslider": "^1.1.6",
+        "rellax": "^1.12.1"
     }
 }
