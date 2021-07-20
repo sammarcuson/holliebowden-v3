@@ -1,10 +1,11 @@
-<ul role="list" class="m-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-3 sm:gap-x-24 lg:grid-cols-4 xl:gap-x-16">
+<ul role="list" class="m-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-3 lg:gap-16 text-black">
   {{ collection:interiors }}
-  <li class="relative">
-    <div class="group block w-full aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
+  <li class="relative col-span-1 group">
+    <div class=" block w-full aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
       {{ assets:images limit="1" }}
       {{ if first }}
-      <img src="{{ glide:url width="600" height="600" fit="contain" fm="jpg" }}" alt="" class="object-cover pointer-events-none group-hover:opacity-75">
+      <img src="{{ glide:url width="600" height="400" fit="crop" fm="jpg" filter="greyscale" }}" alt="" class="object-cover pointer-events-none transition duration-150 ease-in-out">
+      <img src="{{ glide:url width="600" height="400" fit="crop" fm="jpg" }}" alt="" class="absolute inset-0 object-cover pointer-events-none opacity-0 group-hover:opacity-100 transition duration-150 ease-in-out">
       {{ else }}
       {{ /if }}
       {{ /assets:images }}
@@ -12,8 +13,12 @@
         <span class="sr-only">View {{ title }}</span>
       </a>
     </div>
-    <p class="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}</p>
-    <p class="block text-sm font-medium text-gray-500 pointer-events-none">{{ taxonomy:type }}</p>
+    <div class="mt-2 block font-louizeDisplay">
+      <div class="flex items-center flex-col">
+        <p class="px-2 m-auto inline-block text-base font-semibold truncate pointer-events-none text-center">{{ title }}{{ if location }}, {{ location }}{{ /if }}</p>
+        <p class="block text-sm font-medium text-gray-500 pointer-events-none">{{ taxonomy:type }}</p>
+      </div>
+    </div>
   </li>
   {{ /collection:interiors }}
 </ul>
