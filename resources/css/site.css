@@ -174,3 +174,14 @@ b {
 #content-slider {
   height:100vh!important;
 }
+
+#fader {
+  @apply fixed;
+  @apply top-0;
+  @apply bottom-0;
+  @apply w-full;
+  @apply h-full;
+  @apply bg-offwhite;
+  @apply pointer-events-none;
+  @apply z-20;
+}

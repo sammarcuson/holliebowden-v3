@@ -14,6 +14,50 @@
 
       gtag('config', 'UA-133003663-1');
     </script>
+    <script>
+      function fadeInPage() {
+        if (!window.AnimationEvent) { return; }
+        var fader = document.getElementById('fader');
+        fader.classList.add('animate-fadeOut');
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!window.AnimationEvent) { return }
+
+        var anchors = document.getElementsByTagName('a');
+
+        for (var idx=0; idx<anchors.length; idx+=1) {
+          if (anchors[idx].hostname !== window.location.hostname) {
+            continue;
+          }
+
+          anchors[idx].addEventListener('click', function(event) {
+            var fader = document.getElementById('fader'),
+                anchor = event.currentTarget;
+
+            var listener = function() {
+              window.location = anchor.href;
+              fader.removeEventListener('animationend', listener);
+            };
+            fader.addEventListener('animationend', listener);
+
+            event.preventDefault();
+            fader.classList.remove('animate-fadeOut');
+            fader.classList.add('animate-fadeIn');
+          });
+        }
+      });
+
+      window.addEventListener('pageshow', function (event) {
+        if (!event.persisted) {
+          return;
+        }
+        var fader = document.getElementById('fader');
+        fader.classList.remove('animate-fadeIn');
+        fader.classList.add('animate-fadeOut');
+      });
+
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,30 +86,17 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#e0dfd6">
 </head>
-
-
 <body class="flex flex-col min-h-screen bg-offwhite">
+  <svg id="fader" class=""></svg>
+  <script>
+    fadeInPage();
+  </script>
   {{ if ! segment_1 == "" }}
   {{ partial:header }}
   {{ /if }}
-  <main class="flex-auto animate-fadeIn">
+  <main class="flex-auto">
     {{ template_content }}
   </main>
   <footer>...</footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      $("a").click(function() {
-          $link = $(this).attr("href");
-          $("header").removeClass('animate-fadeIn');
-          $("main").removeClass('animate-fadeIn');
-          $("body").fadeOut(200);
-          setTimeout(function(){
-              window.location.replace($link);
-          },200);
-          return false;
-      });
-    })
-  </script>
 </body>
-
 </html>

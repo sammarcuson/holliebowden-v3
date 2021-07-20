@@ -39,12 +39,25 @@ module.exports = {
 
     extend: {
       animation: {
-        fadeIn: "fadeIn 0.5s ease-in forwards"
+        fadeIn: "fadeIn 0.5s ease-in forwards",
+        fadeOut: "fadeOut 0.5s ease-in forwards"
       },
       keyframes: {
-        fadeIn: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 }
+        'fadeIn': {
+          'from': {
+            opacity: '0'
+          },
+          'to': {
+            opacity: '1'
+          },
+        },
+        'fadeOut': {
+          'from': {
+            opacity: '1'
+          },
+          'to': {
+            opacity: '0'
+          },
         }
       },
       colors: {
