@@ -40,6 +40,7 @@ module.exports = {
     extend: {
       animation: {
         fadeIn: "fadeIn 0.5s ease-in forwards",
+        fadeInSlow: "fadeIn 1s ease-in forwards",
         fadeOut: "fadeOut 0.5s ease-in forwards"
       },
       keyframes: {
@@ -63,6 +64,7 @@ module.exports = {
       colors: {
           offwhite: '#e0dfd6',
           black: '#302e29',
+          lightblack: '#5b5750',
       },
       minWidth: {
         '52': '13rem',
