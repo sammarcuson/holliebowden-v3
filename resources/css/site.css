@@ -1,5 +1,3 @@
-@import url('https://rsms.me/inter/inter.css');
-
 @import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
 
 @font-face {
@@ -15,6 +13,8 @@
 }
 
 
+html {
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Louize-Display';
@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 body {
-    @apply text-gray-800;
-    font-feature-settings: "frac" 1;
+    @apply text-black;
+    /* font-feature-settings: "frac" 1; */
     font-family: 'Karla', sans-serif;
     font-weight: 100;
     -webkit-font-smoothing: antialiased;
@@ -41,16 +41,16 @@ p {
   letter-spacing: -0.02rem;
   margin-top: 0;
 }
-blockquote {
-  font-size: .875rem;
-  line-height: 1.25rem;
+blockquote p {
+  font-size: 1em;
+  line-height: 1.5rem;
   font-weight: bold;
   letter-spacing: -0.05rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-right: 0;
   @screen md {
-    margin-left: 33%;
+    margin-left: 25%;
   }
 }
 b {

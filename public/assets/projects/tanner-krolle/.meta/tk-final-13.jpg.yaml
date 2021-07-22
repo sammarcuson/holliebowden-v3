@@ -1,6 +1,7 @@
 data:
   image_display: float-left
   padding: heavy
+  focus: 6-18-1
 size: 203190
 last_modified: 1625562245
 width: 1068

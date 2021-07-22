@@ -76,39 +76,7 @@ sections:
     display: Style
     fields:
       -
-        handle: light_mode
-        field:
-          display: 'Light Mode'
-          type: toggle
-          icon: toggle
-          listable: hidden
-      -
-        handle: overlay
-        field:
-          options:
-            none: None
-            dark: Dark
-            light: Light
-          inline: false
-          cast_booleans: false
-          display: Overlay
-          type: radio
-          icon: radio
-          instructions: 'Adds an overlay the lead image.'
-          listable: hidden
-      -
-        handle: opacity
-        field:
-          step: 10
-          min: 10
-          max: 90
-          default: 20
-          display: Opacity
-          type: range
-          icon: range
-          listable: hidden
-          if:
-            overlay: 'not none'
+        import: full_screen_style
   sidebar:
     display: Sidebar
     fields:

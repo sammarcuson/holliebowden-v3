@@ -1,0 +1,55 @@
+title: 'Full Screen Style'
+fields:
+  -
+    handle: light_mode
+    field:
+      display: 'Light Mode'
+      type: toggle
+      icon: toggle
+      listable: hidden
+  -
+    handle: overlay
+    field:
+      options:
+        none: None
+        dark: Dark
+        light: Light
+      inline: false
+      cast_booleans: false
+      display: Overlay
+      type: radio
+      icon: radio
+      instructions: 'Adds an overlay the lead image.'
+      listable: hidden
+  -
+    handle: opacity
+    field:
+      step: 10
+      min: 10
+      max: 90
+      default: 20
+      display: Opacity
+      type: range
+      icon: range
+      listable: hidden
+      if:
+        overlay: 'not none'
+  -
+    handle: alignment
+    field:
+      options:
+        object-center: Center
+        object-left-top: 'Top Left'
+        object-bottom: Bottom
+        object-left: Left
+        object-left-bottom: 'Bottom Left'
+        object-right: Right
+        object-right-bottom: 'Bottom Right'
+        object-right-top: 'Top Right'
+        object-top: Top
+      inline: false
+      cast_booleans: false
+      display: Alignment
+      type: radio
+      icon: radio
+      listable: hidden
