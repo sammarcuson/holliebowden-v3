@@ -64,7 +64,7 @@ module.exports = {
       colors: {
           offwhite: '#e0dfd6',
           black: '#302e29',
-          lightblack: '#5b5750',
+          lightblack: '#4a4741',
       },
       minWidth: {
         '52': '13rem',

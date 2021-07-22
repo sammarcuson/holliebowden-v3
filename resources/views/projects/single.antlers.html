@@ -9,8 +9,8 @@
   {{ assets:images }}
 
     {{ if first }}
-    <div class="h-screen mb-12 z-0 js-show-on-scroll">
-      <div class="absolute inset-0 w-screen h-screen inset-0 bg-cover bg-norepeat" style="background-image: url('{{ glide:url fm="jpg" height="1400" fit="crop_focal" }}');">
+    <div class="relative h-screen mb-12 z-0 js-show-on-scroll">
+      <div class="absolute inset-0 w-full h-full inset-0 bg-cover bg-norepeat" style="background-image: url('{{ glide:url fm="jpg" height="1400" fit="crop_focal" }}');">
         <div class="hidden absolute bottom-8 w-full text-center opacity-50">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 m-auto animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width=".8" d="M19 9l-7 7-7-7" />
