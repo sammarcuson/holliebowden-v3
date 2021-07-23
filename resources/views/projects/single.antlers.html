@@ -15,7 +15,7 @@
 <div class="w-full m-auto">
   {{ assets:images }}
     {{ if first }}
-    <div class="relative h-screen-95 mb-12 z-0 js-show-on-scroll">
+    <div class="relative h-screen-95 mb-24 z-0 js-show-on-scroll">
       <div class="absolute inset-0">
         <img class="h-full w-full object-cover {{ alignment }}" src="{{ glide:url fm="jpg" height="1600" fit="crop_focal" }}" alt="People working on laptops">
       </div>
@@ -34,21 +34,7 @@
   {{ /assets:images }}
 </div>
 
-<div class="w-full m-auto max-w-7xl">
-  {{ assets:images }}
-    {{ if ! first }}
-    <div class="{{ if image_display == "float-left" }}md:float-left md:w-1/2 {{ elseif image_display == "float-right" }}md:float-right md:w-1/2{{ else }}clear-both w-full m-auto{{ /if }} {{ if padding == "heavy" }}p-12 lg:p-32 lg:pt-12 {{ elseif padding == "none" }}px-0 py-12 {{ else }}p-12 {{ /if }} flex items-center js-show-on-scroll">
-      <img
-        data-index={{ index }}
-        class="block m-auto max-h-screen"
-        src="{{ glide:url fm="jpg" height="900" }}"
-        alt="{{ alt }}"
-      />
-    </div>
-    {{ else }}
-    {{ /if }}
-  {{ /assets:images }}
-</div>
+{{ partial:projects/images-grid }}
 
 <script type="text/javascript">
 // fade in content as scrolled
