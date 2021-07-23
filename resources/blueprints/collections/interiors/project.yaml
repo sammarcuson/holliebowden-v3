@@ -58,6 +58,26 @@ sections:
             - h5
             - h6
             - anchor
+      -
+        handle: photographer
+        field:
+          input_type: text
+          antlers: false
+          display: Photographer
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: photographer_website
+        field:
+          input_type: text
+          antlers: false
+          display: 'Photographer Website'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - active_url
   images:
     display: Images
     fields:

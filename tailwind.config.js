@@ -80,6 +80,9 @@ module.exports = {
       },
       screens: {
         'xs': '420px',
+      },
+      inset: {
+        '1/10': '10%',
       }
     },
   },

@@ -1,16 +1,21 @@
 
-<div id="projectDetails" class="transition-all duration-1000 absolute left-10 right-10 top-36 md:top-auto md:left-auto md:right-16 md:bottom-16 p-12 md:w-1/3 lg:w-1/4 z-10 bg-black text-offwhite">
+<div id="projectDetails" class="transition-all duration-1000 absolute left-10 right-10 top-36 md:top-auto md:left-auto md:right-16 md:bottom-1/10 p-10 md:w-1/3 lg:w-1/4 z-10 bg-black text-offwhite">
   <h1 class="block f6 mb-2 font-louizeDisplay text-2xl leading-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}</h1>
   <div class="text-sm">
     {{ description }}
   </div>
+  {{ if photographer }}
+  <div class="text-xs mt-4">
+    Photography by {{ if photographer_website }}<a href="{{ photographer_website }}"><span class="whitespace-nowrap">{{ photographer }}</span></a>{{ else }}<span class="whitespace-nowrap">{{ photographer }}</span>{{ /if }}
+  </div>
+  {{ /if }}
   {{ partial:projects/nav }}
 </div>
 
 <div class="w-full m-auto">
   {{ assets:images }}
     {{ if first }}
-    <div class="relative h-screen mb-12 z-0 js-show-on-scroll">
+    <div class="relative h-screen-95 mb-12 z-0 js-show-on-scroll">
       <div class="absolute inset-0">
         <img class="h-full w-full object-cover {{ alignment }}" src="{{ glide:url fm="jpg" height="1600" fit="crop_focal" }}" alt="People working on laptops">
       </div>

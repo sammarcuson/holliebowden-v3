@@ -168,6 +168,10 @@ b {
   height: 90vh;
 }
 
+.h-screen-95 {
+  height: 95vh;
+}
+
 .max-h-75 {
   max-height: 75%;
 }
