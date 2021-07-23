@@ -6,7 +6,7 @@
   </div>
   {{ if photographer }}
   <div class="text-xs mt-4">
-    Photography by {{ if photographer_website }}<a href="{{ photographer_website }}"><span class="whitespace-nowrap">{{ photographer }}</span></a>{{ else }}<span class="whitespace-nowrap">{{ photographer }}</span>{{ /if }}
+    Photography by {{ if photographer_website }}<a href="{{ photographer_website }}" target="_blank"><span class="whitespace-nowrap underline">{{ photographer }}</span></a>{{ else }}<span class="whitespace-nowrap">{{ photographer }}</span>{{ /if }}
   </div>
   {{ /if }}
   {{ partial:projects/nav }}
