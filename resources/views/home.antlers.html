@@ -1,20 +1,22 @@
 <div class="relative w-full h-screen-90">
   <div class="absolute inset-0">
-    <img class="h-full w-full object-cover" src="{{ background_image }}" alt="People working on laptops">
+    <img class="h-full w-full object-cover" src="{{ background_image }}">
   </div>
   <div class="absolute inset-0 text-offwhite">
     <h1 class="absolute uppercase text-5xl sm:text-6xl font-thin  mb-0 bottom-16 sm:bottom-20 left-10 sm:left-16">Hollie<br/>Bowden</h1>
   </div>
 </div>
 
+{{ if display_profile == true }}
 <div class="relative bg-black md:grid grid-flow-row grid-cols-1 md:grid-cols-2 h-screen-90">
   <div class="bg-black h-full">
-    <img src="/assets/pages/profile-1.jpg" class="h-full w-full object-cover" alt="">
+    <img src="{{ profile_image }}" class="h-full w-full object-cover" alt="">
   </div>
   <a href="/about" class="absolute inset-0 md:relative pt-36 sm:pt-36 px-10 sm:px-16 md:p-20 flex items-start md:items-center md:bg-black md:hover:bg-lightblack transition-colors">
-    <p class="text-3xl sm:text-4xl font-louizeDisplay text-black md:text-offwhite js-show-on-scroll">a beauty fundamentalist, visionary designer and <span class="whitespace-nowrap">an aesthete...</span></p>
+    <div class="text-3xl sm:text-4xl font-louizeDisplay text-black md:text-offwhite js-show-on-scroll">{{ quote }}</div>
   </a>
 </div>
+{{ /if }}
 
 <div class="relative grid grid-flow-row grid-cols-1 bg-offwhite h-screen-90 js-show-on-scroll">
   <div class="absolute inset-0">
