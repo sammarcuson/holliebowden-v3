@@ -27,6 +27,9 @@ sections:
           mode: grid
           restrict: false
           allow_uploads: true
+      -
+        import: full_screen_style
+        prefix: title_
   profile:
     display: Profile
     fields:
