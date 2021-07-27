@@ -1,8 +1,12 @@
 <div class="relative w-full h-screen-90">
   <div class="absolute inset-0">
-    <img class="h-full w-full object-cover" src="{{ background_image }}">
+    <img class="h-full w-full object-cover {{ title_alignment }}" src="{{ glide:background_image width="1200" height="1200" fit="contain" fm="jpg" }}">
   </div>
-  <div class="absolute inset-0 text-offwhite">
+  {{ if title_overlay != "none" and title_overlay != null }}
+  <div class="absolute inset-0 {{ if title_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ title_opacity }}">
+  </div>
+  {{ /if }}
+  <div class="absolute inset-0 {{ title_text_colour }}">
     <h1 class="absolute uppercase text-5xl sm:text-6xl font-thin  mb-0 bottom-16 sm:bottom-20 left-10 sm:left-16">Hollie<br/>Bowden</h1>
   </div>
 </div>
@@ -10,19 +14,27 @@
 {{ if display_profile == true }}
 <div class="relative bg-black md:grid grid-flow-row grid-cols-1 md:grid-cols-2 h-screen-90">
   <div class="bg-black h-full">
-    <img src="{{ profile_image }}" class="h-full w-full object-cover" alt="">
+    {{ if profile_overlay != "none" and profile_overlay != null }}
+    <div class="absolute inset-0 {{ if profile_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ profile_opacity }} md:bg-transparent">
+    </div>
+    {{ /if }}
+    <img src="{{ glide:profile_image width="900" height="900" fit="contain" fm="jpg" }}" class="h-full w-full object-cover {{ profile_alignment }}" alt="">
   </div>
   <a href="/about" class="absolute inset-0 md:relative pt-36 sm:pt-36 px-10 sm:px-16 md:p-20 flex items-start md:items-center md:bg-black md:hover:bg-lightblack transition-colors">
-    <div class="text-3xl sm:text-4xl font-louizeDisplay text-black md:text-offwhite js-show-on-scroll">{{ quote }}</div>
+    <div class="text-3xl sm:text-4xl font-louizeDisplay {{ profile_text_colour }} md:text-offwhite js-show-on-scroll">{{ quote }}</div>
   </a>
 </div>
 {{ /if }}
 
 <div class="relative grid grid-flow-row grid-cols-1 bg-offwhite h-screen-90 js-show-on-scroll">
   <div class="absolute inset-0">
-    <img class="h-full w-full object-cover" src="/img/asset/YXNzZXRzL3Byb2plY3RzL2J1dGUvZmluYWxzLTEyLmpwZw==?w=600&h=400&fit=crop&fm=jpg&s=ec0bf00e9c58796cc98e8c1d70e791b6" alt="">
+    {{ if interiors_overlay != "none" and interiors_overlay != null }}
+    <div class="absolute inset-0 {{ if interiors_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ interiors_opacity }} md:bg-transparent">
+    </div>
+    {{ /if }}
+    <img class="h-full w-full object-cover {{ interiors_alignment }}" src="{{ glide:interiors_image width="1200" height="1200" fit="contain" fm="jpg" }}" alt="">
   </div>
-    <a href="/interiors" class="absolute inset-0 text-black hover:text-lightblack transition-colors">
+    <a href="/interiors" class="absolute inset-0 {{ interiors_text_colour }}">
       <h1 class="absolute text-3xl sm:text-6xl font-thin mb-0 bottom-10 sm:bottom-20 right-10 sm:right-16 js-show-on-scroll">interiors</h1>
     </a>
 </div>
