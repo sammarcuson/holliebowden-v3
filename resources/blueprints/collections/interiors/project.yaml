@@ -97,6 +97,7 @@ sections:
     fields:
       -
         import: full_screen_style
+        prefix: project_
   sidebar:
     display: Sidebar
     fields:
