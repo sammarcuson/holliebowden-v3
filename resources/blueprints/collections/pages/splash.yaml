@@ -53,6 +53,9 @@ sections:
           icon: assets
           listable: hidden
       -
+        import: full_screen_style
+        prefix: profile_
+      -
         handle: quote
         field:
           input_type: text
@@ -83,6 +86,9 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+      -
+        import: full_screen_style
+        prefix: interiors_
   sidebar:
     display: Sidebar
     fields:
