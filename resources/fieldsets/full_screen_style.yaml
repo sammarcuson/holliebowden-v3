@@ -1,13 +1,6 @@
 title: 'Full Screen Style'
 fields:
   -
-    handle: light_mode
-    field:
-      display: 'Light Mode'
-      type: toggle
-      icon: toggle
-      listable: hidden
-  -
     handle: text_colour
     field:
       options:
