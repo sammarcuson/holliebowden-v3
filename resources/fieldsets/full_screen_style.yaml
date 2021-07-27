@@ -12,7 +12,7 @@ fields:
     field:
       options:
         text-black: Black
-        text-offewhite: White
+        text-offwhite: White
       inline: false
       cast_booleans: false
       display: 'Text Colour'
