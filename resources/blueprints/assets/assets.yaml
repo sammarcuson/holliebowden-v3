@@ -26,9 +26,10 @@ sections:
       -
         handle: do_not_wrap
         field:
-          display: 'Do not wrap'
+          display: 'Don''t Wrap'
           type: toggle
           icon: toggle
+          instructions: 'Forces the image to display in its own row.'
           listable: hidden
       -
         handle: padding
