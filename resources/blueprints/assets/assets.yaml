@@ -16,6 +16,7 @@ sections:
         field:
           options:
             float-left: Left
+            center: Center
             float-right: Right
           inline: false
           cast_booleans: false
