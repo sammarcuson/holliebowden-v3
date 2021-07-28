@@ -33,7 +33,7 @@ sections:
           instructions: 'Forces the image to display in its own row.'
           listable: hidden
           if_any:
-            image_display: 'equals float-right'
+            image_display: 'not center'
       -
         handle: padding
         field:
