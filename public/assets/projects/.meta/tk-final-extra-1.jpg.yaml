@@ -1,6 +1,6 @@
 data:
   image_display: center
-  padding: none
+  padding: normal
   do_not_wrap: false
 size: 199861
 last_modified: 1625562243
