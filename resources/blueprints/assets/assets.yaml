@@ -15,13 +15,20 @@ sections:
         handle: image_display
         field:
           options:
-            float-left: 'Float Left'
-            float-right: 'Float Right'
+            float-left: Left
+            float-right: Right
           inline: false
           cast_booleans: false
-          display: 'Image Display'
+          display: Align
           type: radio
           icon: radio
+          listable: hidden
+      -
+        handle: do_not_wrap
+        field:
+          display: 'Do not wrap'
+          type: toggle
+          icon: toggle
           listable: hidden
       -
         handle: padding
