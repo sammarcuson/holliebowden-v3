@@ -32,8 +32,8 @@ sections:
           icon: toggle
           instructions: 'Forces the image to display in its own row.'
           listable: hidden
-          if:
-            image_display: 'equals float-right'
+          if_any:
+            image_display: 'equals float-left'
       -
         handle: padding
         field:
