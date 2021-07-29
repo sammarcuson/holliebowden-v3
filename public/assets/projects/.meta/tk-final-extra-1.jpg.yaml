@@ -1,6 +1,7 @@
 data:
-  image_align: center
-  padding: normal
+  image_display: center
+  padding: 'px-4 md:px-12'
+  do_not_wrap: false
   display_inline: false
 size: 199861
 last_modified: 1625562243
