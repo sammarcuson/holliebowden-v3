@@ -15,10 +15,10 @@ sections:
         handle: image_align
         field:
           options:
-            float-left: Left
-            center: Center
-            float-right: Right
-          inline: false
+            justify-self-left: Left
+            justify-self-auto: Center
+            justify-self-right: Right
+          inline: true
           cast_booleans: false
           display: Align
           type: radio
