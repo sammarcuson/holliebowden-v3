@@ -1,7 +1,8 @@
 data:
-  image_align: justify-start
+  image_align: left
   do_not_wrap: false
   display_inline: true
+  padding: 'px-4 md:px-12'
 size: 338390
 last_modified: 1625562245
 width: 1600
