@@ -3,6 +3,7 @@ data:
   do_not_wrap: false
   image_align: left
   display_inline: true
+  padding: 'px-4 md:px-12'
 size: 1729778
 last_modified: 1625562252
 width: 2371
