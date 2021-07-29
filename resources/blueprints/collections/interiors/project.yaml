@@ -98,12 +98,3 @@ sections:
           required: true
           validate:
             - required
-      -
-        handle: type
-        field:
-          type: terms
-          taxonomies:
-            - type
-          display: Type
-          mode: select
-          listable: hidden
