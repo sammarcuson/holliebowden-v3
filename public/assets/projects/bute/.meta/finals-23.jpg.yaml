@@ -1,4 +1,7 @@
-data: {  }
+data:
+  image_align: left
+  display_inline: false
+  padding: p-0
 size: 5831920
 last_modified: 1625562241
 width: 2857
