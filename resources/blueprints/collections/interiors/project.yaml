@@ -98,3 +98,11 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select
