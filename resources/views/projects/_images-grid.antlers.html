@@ -1,7 +1,6 @@
 <div class="w-full m-auto max-w-7xl">
   {{ assets:images }}
-    {{ if ! first }}
-    <div class="{{ if image_display == "float-left" }}md:float-left md:w-1/2 {{ elseif image_display == "float-right" }}md:float-right md:w-1/2{{ else }}clear-both w-full m-auto{{ /if }} {{ if padding == "heavy" }}p-12 lg:p-32 lg:pt-12 {{ elseif padding == "none" }}px-0 py-12 {{ else }}px-12 pb-24  {{ /if }} flex items-center js-show-on-scroll">
+    <div class="js-show-on-scroll {{ if image_align == "left" }}md:float-left md:w-1/2 {{ elseif image_align == "right" }}md:float-right md:w-1/2{{ else }}clear-both w-full m-auto{{ /if }} {{ if padding }}{{ padding }}{{ else }}px-4 md:px-12{{ /if }} {{ unless display_inline }}clear-both{{ /unless }} mb-24">
       <img
         data-index={{ index }}
         class="block m-auto max-h-screen"
@@ -9,7 +8,5 @@
         alt="{{ alt }}"
       />
     </div>
-    {{ else }}
-    {{ /if }}
   {{ /assets:images }}
 </div>

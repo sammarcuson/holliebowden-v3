@@ -13,25 +13,21 @@
 </div>
 
 <div class="w-full m-auto">
-  {{ assets:images }}
-    {{ if first }}
     <div class="relative {{ if (images | count) < 2 }}h-screen{{ else }}h-screen-95{{ /if }} mb-24 z-0 js-show-on-scroll">
       <div class="absolute inset-0">
-        <img class="h-full w-full object-cover {{ project_alignment }}" src="{{ glide:url fm="jpg" height="1600" fit="crop_focal" }}" alt="People working on laptops">
+        <img class="h-full w-full object-cover {{ project_alignment }}" src="{{ glide:lead_image fm="jpg" height="1600" fit="crop_focal" }}" alt="">
       </div>
-      <div class="absolute bottom-8 w-full text-center opacity-50">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 m-auto animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width=".8" d="M19 9l-7 7-7-7" />
-        </svg>
-      </div>
+
       {{ if project_overlay != "none" and project_overlay != null }}
       <div class="absolute inset-0 {{ if project_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ project_opacity }}">
       </div>
       {{ /if }}
     </div>
-    {{ else }}
-    {{ /if }}
-  {{ /assets:images }}
+    <div id="scrollIndicator" class="hidden absolute bottom-0 md:w-1/3 lg:w-1/4 md:right-16 text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 m-auto animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width=".8" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
 </div>
 
 {{ partial:projects/images-grid }}
@@ -46,9 +42,11 @@
     // detects new state and compares it with the new one
     if ((document.body.getBoundingClientRect()).top < -80)
       document.getElementById('projectDetails').classList.add('opacity-0'),
+      document.getElementById('scrollIndicator').classList.add('opacity-0'),
       console.log("scrollposition is " + scrollPos);
     else if ((document.body.getBoundingClientRect()).top > scrollPos)
       document.getElementById('projectDetails').classList.remove('opacity-0'),
+      document.getElementById('scrollIndicator').classList.remove('opacity-0'),
       console.log("scrollposition is " + scrollPos);
     else
       console.log("scrollposition is " + scrollPos);
