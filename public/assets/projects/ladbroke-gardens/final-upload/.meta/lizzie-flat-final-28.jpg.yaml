@@ -1,6 +1,6 @@
 data:
   do_not_wrap: false
-  padding: 'px-4 md:px-12'
+  padding: 'p-12 lg:p-32'
   display_inline: false
 size: 1191033
 last_modified: 1625562250
