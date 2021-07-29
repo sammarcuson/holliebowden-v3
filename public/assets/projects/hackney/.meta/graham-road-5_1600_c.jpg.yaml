@@ -1,6 +1,7 @@
 data:
   image_align: justify-self-start
-  display_inline: false
+  do_not_wrap: false
+  display_inline: true
 size: 338390
 last_modified: 1625562245
 width: 1600
