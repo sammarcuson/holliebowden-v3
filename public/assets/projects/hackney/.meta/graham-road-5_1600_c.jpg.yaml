@@ -1,5 +1,5 @@
 data:
-  image_align: center
+  image_align: justify-self-start
   do_not_wrap: false
 size: 338390
 last_modified: 1625562245
