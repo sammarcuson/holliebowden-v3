@@ -1,6 +1,8 @@
 title: Interiors
 template: projects/single
 layout: layout
+taxonomies:
+  - tags
 revisions: false
 route: '/interiors/{slug}'
 date: true
