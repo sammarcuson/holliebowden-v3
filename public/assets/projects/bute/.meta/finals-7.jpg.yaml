@@ -1,6 +1,8 @@
 data:
-  image_align: float-right
-  display_inline: true
+  image_display: float-right
+  do_not_wrap: true
+  image_align: right
+  display_inline: false
 size: 6158387
 last_modified: 1625562241
 width: 2857
