@@ -2,7 +2,7 @@ data:
   image_display: float-right
   image_align: right
   display_inline: false
-  padding: 'p-12 lg:p-32'
+  padding: p-0
 size: 954446
 last_modified: 1625562252
 width: 1962
