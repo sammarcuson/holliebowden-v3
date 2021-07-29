@@ -35,14 +35,6 @@ sections:
           validate:
             - required
       -
-        handle: project_type
-        field:
-          type: terms
-          taxonomies:
-            - type
-          display: 'Project Type'
-          mode: select
-      -
         handle: type
         field:
           type: terms
