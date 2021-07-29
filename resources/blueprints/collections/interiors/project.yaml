@@ -99,15 +99,6 @@ sections:
           validate:
             - required
       -
-        handle: type
-        field:
-          type: terms
-          taxonomies:
-            - tags
-          display: Type
-          mode: select
-          listable: hidden
-      -
         handle: tags
         field:
           type: terms
