@@ -1,7 +1,7 @@
 data:
   image_display: float-left
   image_align: right
-  display_inline: false
+  display_inline: true
   padding: 'px-4 md:px-12'
 size: 1297244
 last_modified: 1625562250
