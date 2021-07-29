@@ -1,5 +1,5 @@
 data:
-  image_align: justify-self-end
+  image_align: justify-start
   do_not_wrap: false
   display_inline: true
 size: 1396668
