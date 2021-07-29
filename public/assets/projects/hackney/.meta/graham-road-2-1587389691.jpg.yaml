@@ -1,7 +1,8 @@
 data:
-  display_inline: true
-  image_align: justify-self-end
+  do_not_wrap: true
+  image_align: justify-end
   padding: heavy
+  display_inline: false
 size: 1427539
 last_modified: 1625562245
 width: 2002
