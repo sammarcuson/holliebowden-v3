@@ -18,9 +18,9 @@
     <div class="mt-2 block font-louizeDisplay">
       <div class="flex items-center flex-col">
         <p class="px-2 m-auto inline-block text-base font-semibold truncate pointer-events-none text-center">
-          {{ if in_progress }}<span class="m-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-lightblack text-offwhite opacity-50">
-            In Progress
-          </span> {{ /if }}{{ title }}{{ if location }}, {{ location }}{{ /if }}</p>
+           {{ title }}{{ if location }}, {{ location }}{{ /if }} {{ if in_progress }}<span class="m-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-lightblack text-offwhite opacity-50 uppercase font-karla">
+             In Progress
+           </span>{{ /if }}</p>
       </div>
     </div>
   </li>
