@@ -1,7 +1,7 @@
 data:
   image_display: float-left
   do_not_wrap: true
-  padding: normal
+  padding: 'px-4 md:px-12'
   image_align: left
   display_inline: false
 size: 803102
