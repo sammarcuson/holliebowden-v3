@@ -40,5 +40,13 @@ sections:
           type: terms
           taxonomies:
             - type
-          display: Project Type
+          display: 'Project Type'
+          mode: select
+      -
+        handle: type
+        field:
+          type: terms
+          taxonomies:
+            - type
+          display: 'Project Type'
           mode: select
