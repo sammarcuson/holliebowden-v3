@@ -8,8 +8,8 @@
       {{ else }}
       {{ /if }}
       {{ /assets:images }}
-      {{ if (project_type | in_array:in-progress) }}
-        {{ else }}
+
+      {{ if ! in_progress }}
         <a href="{{ url }}" class="absolute inset-0 focus:outline-none">
           <span class="sr-only">View {{ title }}</span>
         </a>
@@ -18,7 +18,7 @@
     <div class="mt-2 block font-louizeDisplay">
       <div class="flex items-center flex-col">
         <p class="px-2 m-auto inline-block text-base font-semibold truncate pointer-events-none text-center">
-          {{ if (project_type | in_array:in-progress) }}<span class="m-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-lightblack text-offwhite opacity-50">
+          {{ if in_progress }}<span class="m-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-lightblack text-offwhite opacity-50">
             In Progress
           </span> {{ /if }}{{ title }}{{ if location }}, {{ location }}{{ /if }}</p>
       </div>
