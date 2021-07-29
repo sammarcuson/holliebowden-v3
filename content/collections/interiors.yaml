@@ -2,7 +2,7 @@ title: Interiors
 template: projects/single
 layout: layout
 taxonomies:
-  - tags
+  - project_type
 revisions: false
 route: '/interiors/{slug}'
 date: true
