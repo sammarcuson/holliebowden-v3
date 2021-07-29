@@ -2,7 +2,7 @@ data:
   image_display: float-left
   do_not_wrap: true
   padding: normal
-  image_align: justify-start
+  image_align: center
   display_inline: false
 size: 803102
 last_modified: 1625562252
