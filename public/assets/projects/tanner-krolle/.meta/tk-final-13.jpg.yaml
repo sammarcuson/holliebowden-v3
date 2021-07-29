@@ -1,7 +1,9 @@
 data:
-  image_align: float-left
-  padding: heavy
+  image_display: float-left
+  padding: 'p-12 lg:p-32'
   focus: 6-18-1
+  image_align: left
+  display_inline: false
 size: 203190
 last_modified: 1625562245
 width: 1068
