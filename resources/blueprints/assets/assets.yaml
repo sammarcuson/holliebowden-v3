@@ -12,7 +12,7 @@ sections:
           input_type: text
           antlers: false
       -
-        handle: image_display
+        handle: image_align
         field:
           options:
             float-left: Left
