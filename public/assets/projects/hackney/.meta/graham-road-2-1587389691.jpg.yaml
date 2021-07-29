@@ -1,5 +1,5 @@
 data:
-  do_not_wrap: true
+  do_not_wrap: false
   image_align: float-left
   padding: heavy
 size: 1427539
