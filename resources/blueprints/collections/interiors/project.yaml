@@ -99,10 +99,10 @@ sections:
           validate:
             - required
       -
-        handle: tags
+        handle: project_type
         field:
           type: terms
           taxonomies:
-            - tags
-          display: Type
+            - project_type
+          display: 'Project Type'
           mode: select
