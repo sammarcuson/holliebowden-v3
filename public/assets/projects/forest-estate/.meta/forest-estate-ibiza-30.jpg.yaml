@@ -2,7 +2,7 @@ data:
   image_display: float-left
   do_not_wrap: true
   padding: 'px-4 md:px-12'
-  image_align: left
+  image_align: right
   display_inline: false
 size: 803102
 last_modified: 1625562252
