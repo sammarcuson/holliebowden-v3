@@ -72,6 +72,18 @@ sections:
     display: Images
     fields:
       -
+        handle: lead_image
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Lead Image'
+          type: assets
+          icon: assets
+          listable: hidden
+      -
         handle: images
         field:
           type: assets
