@@ -1,4 +1,6 @@
-data: {  }
+data:
+  do_not_wrap: false
+  padding: heavy
 size: 4495411
 last_modified: 1625562240
 width: 4000
