@@ -1,5 +1,7 @@
 data:
   focus: 44-48-1
+  image_align: left
+  display_inline: false
 size: 1172441
 last_modified: 1625562243
 width: 1200
