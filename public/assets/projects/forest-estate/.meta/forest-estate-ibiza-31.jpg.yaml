@@ -1,7 +1,7 @@
 data:
-  padding: heavy
+  padding: normal
   do_not_wrap: false
-  image_align: left
+  image_align: center
   display_inline: false
 size: 1602545
 last_modified: 1625562252
