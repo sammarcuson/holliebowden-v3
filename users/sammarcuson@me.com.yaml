@@ -9,7 +9,6 @@ preferences:
     pages:
       after_save: continue_editing
     interiors:
-      after_save: continue_editing
       columns:
         - title
         - slug
