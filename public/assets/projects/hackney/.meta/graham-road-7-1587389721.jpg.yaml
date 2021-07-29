@@ -1,4 +1,6 @@
-data: {  }
+data:
+  image_align: justify-self-end
+  do_not_wrap: false
 size: 1396668
 last_modified: 1625562245
 width: 2002
