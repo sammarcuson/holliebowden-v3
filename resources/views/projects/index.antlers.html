@@ -1,6 +1,6 @@
 <ul role="list" class="m-6 mt-12 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-3 lg:gap-16 text-black">
   {{ collection:interiors sort="order" }}
-  <li class="relative col-span-1 group">
+  <li class="relative col-span-1 group js-show-on-scroll">
     <div class="block w-full aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
       {{ assets:images limit="1" }}
       {{ if first }}
@@ -26,3 +26,27 @@
   </li>
   {{ /collection:interiors }}
 </ul>
+
+<script type="text/javascript">
+  // Fade in on scroll
+    const callback = function (entries) {
+    entries.forEach((entry) => {
+      console.log(entry);
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-fadeIn");
+      } else {
+        entry.target.classList.remove("animate-fadeIn");
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(callback);
+
+  const targets = document.querySelectorAll(".js-show-on-scroll");
+  targets.forEach(function (target) {
+    target.classList.add("opacity-0");
+    observer.observe(target);
+  });
+
+</script>
