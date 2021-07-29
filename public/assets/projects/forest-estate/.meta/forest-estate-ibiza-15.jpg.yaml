@@ -2,6 +2,7 @@ data:
   image_display: float-left
   image_align: right
   display_inline: false
+  padding: p-0
 size: 1871657
 last_modified: 1625562252
 width: 2429
