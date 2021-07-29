@@ -1,6 +1,9 @@
 data:
-  image_align: float-left
-  display_inline: true
+  image_display: float-left
+  do_not_wrap: true
+  image_align: left
+  display_inline: false
+  padding: p-0
 size: 1121918
 last_modified: 1625562250
 width: 2295
