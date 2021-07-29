@@ -28,16 +28,6 @@ sections:
           width: 66
           localizable: true
       -
-        handle: type
-        field:
-          type: terms
-          taxonomies:
-            - type
-          display: 'Project Type'
-          mode: select
-          width: 50
-          validate: required
-      -
         handle: description
         field:
           type: bard
@@ -108,3 +98,11 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: type
+        field:
+          type: terms
+          taxonomies:
+            - type
+          display: Type
+          mode: select
