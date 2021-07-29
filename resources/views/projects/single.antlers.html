@@ -17,15 +17,15 @@
     {{ if first }}
     <div class="relative h-screen-95 mb-24 z-0 js-show-on-scroll">
       <div class="absolute inset-0">
-        <img class="h-full w-full object-cover {{ alignment }}" src="{{ glide:url fm="jpg" height="1600" fit="crop_focal" }}" alt="People working on laptops">
+        <img class="h-full w-full object-cover {{ project_alignment }}" src="{{ glide:url fm="jpg" height="1600" fit="crop_focal" }}" alt="People working on laptops">
       </div>
       <div class="hidden absolute bottom-8 w-full text-center opacity-50">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 m-auto animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width=".8" d="M19 9l-7 7-7-7" />
         </svg>
       </div>
-      {{ if overlay != "none" and overlay != null }}
-      <div class="absolute inset-0 {{ if overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ opacity }}">
+      {{ if project_overlay != "none" and project_overlay != null }}
+      <div class="absolute inset-0 {{ if project_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ project_opacity }}">
       </div>
       {{ /if }}
     </div>
