@@ -16,4 +16,4 @@ preferences:
         - project_type
   assets:
     assets:
-      mode: table
+      mode: grid
