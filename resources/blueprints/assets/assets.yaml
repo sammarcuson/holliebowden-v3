@@ -38,7 +38,8 @@ sections:
         handle: padding
         field:
           options:
-            p-0: Normal
+            p-0: None
+            'px-4 md:px-12': Normal
             'p-12 lg:p-32': Heavy
           inline: false
           cast_booleans: false
