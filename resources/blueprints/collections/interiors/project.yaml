@@ -106,3 +106,11 @@ sections:
             - project_type
           display: 'Project Type'
           mode: select
+          listable: hidden
+      -
+        handle: in_progress
+        field:
+          display: 'In progress'
+          type: toggle
+          icon: toggle
+          listable: hidden
