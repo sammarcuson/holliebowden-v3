@@ -1,5 +1,5 @@
 data:
-  padding: normal
+  padding: 'p-12 lg:p-32'
   do_not_wrap: false
   image_align: center
   display_inline: false
