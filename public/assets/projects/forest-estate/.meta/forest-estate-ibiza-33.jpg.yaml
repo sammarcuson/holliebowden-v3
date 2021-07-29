@@ -1,7 +1,7 @@
 data:
   image_display: float-right
   do_not_wrap: true
-  padding: heavy
+  padding: normal
 size: 1854261
 last_modified: 1625562252
 width: 2321
