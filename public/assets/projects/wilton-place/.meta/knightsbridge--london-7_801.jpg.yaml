@@ -1,6 +1,6 @@
 data:
   image_display: float-left
-  padding: 'p-12 lg:p-32'
+  padding: 'px-4 md:px-12'
   image_align: left
   display_inline: false
 size: 390540
