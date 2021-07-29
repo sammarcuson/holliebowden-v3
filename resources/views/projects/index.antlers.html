@@ -1,5 +1,5 @@
 <ul role="list" class="m-6 mt-12 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-3 lg:gap-16 text-black">
-  {{ collection:interiors }}
+  {{ collection:interiors sort="order" }}
   <li class="relative col-span-1 group">
     <div class="block w-full aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
       {{ assets:images limit="1" }}
@@ -8,14 +8,19 @@
       {{ else }}
       {{ /if }}
       {{ /assets:images }}
-      <a href="{{ url }}" class="absolute inset-0 focus:outline-none">
-        <span class="sr-only">View {{ title }}</span>
-      </a>
+      {{ if (project_type | in_array:in-progress) }}
+        {{ else }}
+        <a href="{{ url }}" class="absolute inset-0 focus:outline-none">
+          <span class="sr-only">View {{ title }}</span>
+        </a>
+      {{ /if }}
     </div>
     <div class="mt-2 block font-louizeDisplay">
       <div class="flex items-center flex-col">
-        <p class="px-2 m-auto inline-block text-base font-semibold truncate pointer-events-none text-center">{{ title }}{{ if location }}, {{ location }}{{ /if }}</p>
-        <p class="block text-sm font-medium text-gray-500 pointer-events-none">{{ taxonomy:type }}</p>
+        <p class="px-2 m-auto inline-block text-base font-semibold truncate pointer-events-none text-center">
+          {{ if (project_type | in_array:in-progress) }}<span class="m-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-lightblack text-offwhite opacity-50">
+            In Progress
+          </span> {{ /if }}{{ title }}{{ if location }}, {{ location }}{{ /if }}</p>
       </div>
     </div>
   </li>
