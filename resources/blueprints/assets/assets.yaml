@@ -15,9 +15,9 @@ sections:
         handle: image_align
         field:
           options:
-            justify-self-start: Left
-            justify-self-auto: Center
-            justify-self-end: Right
+            justify-start: Left
+            justify-center: Center
+            justify-end: Right
           inline: true
           cast_booleans: false
           display: Align
