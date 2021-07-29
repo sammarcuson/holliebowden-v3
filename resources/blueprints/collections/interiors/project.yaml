@@ -104,5 +104,6 @@ sections:
           type: terms
           taxonomies:
             - type
-          display: 'Project Type'
+          display: Type
           mode: select
+          listable: hidden
