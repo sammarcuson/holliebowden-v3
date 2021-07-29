@@ -1,6 +1,6 @@
 data:
   do_not_wrap: true
-  image_align: float-left
+  image_align: justify-self-right
   padding: heavy
 size: 1427539
 last_modified: 1625562245
