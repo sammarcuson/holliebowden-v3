@@ -1,5 +1,5 @@
 data:
-  do_not_wrap: false
+  display_inline: false
   padding: heavy
 size: 5283302
 last_modified: 1625562241

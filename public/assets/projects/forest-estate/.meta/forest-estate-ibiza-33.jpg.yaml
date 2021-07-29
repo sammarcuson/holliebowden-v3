@@ -1,6 +1,6 @@
 data:
   image_align: float-right
-  do_not_wrap: true
+  display_inline: true
   padding: normal
 size: 1854261
 last_modified: 1625562252
