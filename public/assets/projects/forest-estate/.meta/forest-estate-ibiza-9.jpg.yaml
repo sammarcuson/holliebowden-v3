@@ -1,6 +1,8 @@
 data:
-  image_align: center
-  display_inline: true
+  image_display: center
+  do_not_wrap: true
+  image_align: left
+  display_inline: false
 size: 1540619
 last_modified: 1625562252
 width: 2327
