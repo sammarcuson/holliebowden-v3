@@ -99,10 +99,19 @@ sections:
           validate:
             - required
       -
-        handle: type
+        handle: project_type
         field:
           type: terms
           taxonomies:
             - type
           display: Type
+          mode: select
+          listable: hidden
+      -
+        handle: type
+        field:
+          type: terms
+          taxonomies:
+            - type
+          display: 'Project Type'
           mode: select
