@@ -1,4 +1,6 @@
-data: {  }
+data:
+  image_align: right
+  display_inline: false
 size: 267700
 last_modified: 1625562248
 width: 800
