@@ -23,3 +23,12 @@ sections:
           type: text
           icon: text
           listable: hidden
+      -
+        handle: copyright
+        field:
+          input_type: text
+          antlers: false
+          display: Copyright
+          type: text
+          icon: text
+          listable: hidden
