@@ -1,0 +1,25 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: site_name
+        field:
+          type: text
+      -
+        handle: site_description
+        field:
+          type: text
+      -
+        handle: email
+        field:
+          type: text
+      -
+        handle: instagram
+        field:
+          input_type: text
+          antlers: false
+          display: Instagram
+          type: text
+          icon: text
+          listable: hidden
