@@ -1,3 +1,4 @@
+hide: true
 title: Press
 sections:
   main:
@@ -25,6 +26,7 @@ sections:
           restrict: true
           allow_uploads: true
   sidebar:
+    display: Sidebar
     fields:
       -
         handle: slug
@@ -32,3 +34,5 @@ sections:
           type: slug
           required: true
           localizable: true
+          validate:
+            - required
