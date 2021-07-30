@@ -1,5 +1,5 @@
 <nav class="mt-8 px-0 flex items-center justify-between sm:px-0">
-  {{ collection:previous in="interiors" as="entries" limit="1" sort="order" }}
+  {{ collection:previous in="interiors" as="entries" limit="1" sort="order" in_progress:isnt="true" }}
     {{ if no_results }}
     {{ /if }}
     {{ entries }}
@@ -13,7 +13,7 @@
     {{ /entries }}
   {{ /collection:previous }}
 
-  {{ collection:next in="interiors" as="entries" limit="1" sort="order" }}
+  {{ collection:next in="interiors" as="entries" limit="1" sort="order" in_progress:isnt="true" }}
     {{ if no_results }}
     {{ /if }}
     {{ entries }}
