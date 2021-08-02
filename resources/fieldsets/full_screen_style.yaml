@@ -6,6 +6,7 @@ fields:
       options:
         text-black: Black
         text-offwhite: White
+      default: text-black
       inline: false
       cast_booleans: false
       display: 'Text Colour'
@@ -19,6 +20,7 @@ fields:
         none: None
         dark: Dark
         light: Light
+      default: none
       inline: false
       cast_booleans: false
       display: Overlay
@@ -52,6 +54,7 @@ fields:
         object-right-bottom: 'Bottom Right'
         object-right: Right
         object-right-top: 'Top Right'
+      default: object-center
       inline: false
       cast_booleans: false
       display: Alignment
