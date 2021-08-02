@@ -195,5 +195,5 @@ b {
   @apply h-full;
   @apply bg-offwhite;
   @apply pointer-events-none;
-  @apply z-20;
+  @apply z-50;
 }
