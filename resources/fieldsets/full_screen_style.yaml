@@ -44,14 +44,14 @@ fields:
     field:
       options:
         object-center: Center
+        object-top: Top
         object-left-top: 'Top Left'
-        object-bottom: Bottom
         object-left: Left
         object-left-bottom: 'Bottom Left'
-        object-right: Right
+        object-bottom: Bottom
         object-right-bottom: 'Bottom Right'
+        object-right: Right
         object-right-top: 'Top Right'
-        object-top: Top
       inline: false
       cast_booleans: false
       display: Alignment
