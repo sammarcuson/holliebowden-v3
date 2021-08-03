@@ -3,6 +3,7 @@ data:
   image_align: justify-end
   padding: heavy
   display_inline: false
+  focus: 49-20-1
 size: 1427539
 last_modified: 1625562245
 width: 2002
