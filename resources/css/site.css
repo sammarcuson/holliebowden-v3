@@ -176,6 +176,10 @@ b {
   max-height: 75%;
 }
 
+.max-h-screen-90 {
+  max-height: 90vh;
+}
+
 
 /* Image slider cusomisations */
 
