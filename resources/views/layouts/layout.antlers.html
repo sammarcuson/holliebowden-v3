@@ -86,15 +86,15 @@
 </head>
 <body class="flex flex-col min-h-screen bg-offwhite">
   <svg id="fader" class=""></svg>
-  <script>
-    fadeInPage();
-  </script>
   {{ if ! segment_1 == "" }}
-  {{ partial:header }}
+    {{ partial:header }}
   {{ /if }}
   <main class="flex-auto" x-bind:class="{ 'fixed': showMobileNav }">
     {{ template_content }}
   </main>
   {{ partial:footer }}
+  <script>
+    fadeInPage();
+  </script>
 </body>
 </html>

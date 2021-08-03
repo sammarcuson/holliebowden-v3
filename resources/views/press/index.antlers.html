@@ -1,13 +1,8 @@
 {{ collection:press show_unpublished="false" }}
-<div class="hidden sticky top-0 left-0">
-  <h2 class="inline-block text-center text-sm uppercase font-bold font-karla pl-12 pr-6 py-4 text-offwhite bg-lightblack border-b border-black">{{ title }}</h2>
-</div>
-
-<div class="sticky top-0">
-  <h2 class="block text-left text-sm lg:text-xl uppercase font-bold font-karla h-8 md:h-12 lg:h-14 text-black transform rotate-90 origin-bottom-left bg-offwhite">{{ title }}</h2>
-</div>
+  <div class="sticky top-0">
+    <h2 class="block text-left text-sm lg:text-xl uppercase font-bold font-karla h-8 md:h-12 lg:h-14 text-black transform rotate-90 origin-bottom-left bg-offwhite">{{ title }}</h2>
+  </div>
   <div class="px-6">
     {{ partial:projects/images-grid }}
   </div>
-
 {{ /collection:press }}
