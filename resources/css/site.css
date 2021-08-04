@@ -35,12 +35,12 @@ h1 {
     @apply text-4xl font-bold leading-none mb-16;
 }
 
-p {
+/* p {
   font-size: .875rem;
   line-height: 1.25rem;
   letter-spacing: -0.02rem;
   margin-top: 0;
-}
+} */
 blockquote p {
   font-size: 1em;
   line-height: 1.5rem;
@@ -56,6 +56,10 @@ blockquote p {
 b {
   font-weight: bold;
 }
+
+/* .project-description p {
+  font-size: @apply text-xl;
+} */
 
 .content {
     > h2 {
@@ -156,6 +160,11 @@ b {
         }
     }
 }
+
+.h-screen-10 {
+  height: 10vh;
+}
+
 .h-screen-75 {
   height: 75vh;
 }

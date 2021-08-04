@@ -1,11 +1,17 @@
+<!-- card 2 -->
+<div id="projectDetails" class="hidden transition-all duration-1000 absolute left-10 right-0 top-36 md:top-auto md:left-auto md:right-16 md:bottom-1/10 p-8 md:w-auto z-10 bg-black text-offwhite text-right">
+  <h1 class="block mb-2 font-louizeDisplay text-xl leading-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}</h1>
+  {{ partial:projects/nav }}
+</div>
 
-<div id="projectDetails" class="transition-all duration-1000 absolute left-10 right-10 top-36 md:top-auto md:left-auto md:right-16 md:bottom-1/10 p-10 md:w-1/3 lg:w-1/4 z-10 bg-black text-offwhite">
+<!-- card 1 -->
+<div id="projectDetails" class="hidden transition-all duration-1000 absolute left-10 right-10 top-36 md:top-auto md:left-auto md:right-16 md:bottom-1/10 p-8 md:w-1/3 z-10 bg-black text-offwhite">
   <h1 class="block f6 mb-2 font-louizeDisplay text-2xl leading-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}</h1>
   <div class="text-sm">
     {{ description }}
   </div>
   {{ if photographer }}
-  <div class="text-xs mt-4">
+  <div class="text-xs mt-0">
     Photography by {{ if photographer_website }}<a href="{{ photographer_website }}" target="_blank"><span class="whitespace-nowrap underline">{{ photographer }}</span></a>{{ else }}<span class="whitespace-nowrap">{{ photographer }}</span>{{ /if }}
   </div>
   {{ /if }}
@@ -13,7 +19,7 @@
 </div>
 
 <div class="w-full m-auto">
-    <div class="relative {{ if (images | count) < 2 }}h-screen{{ else }}h-screen-95{{ /if }} mb-24 z-0 js-show-on-scroll">
+    <div class="relative {{ if (images | count) < 2 }}h-screen{{ else }}h-screen-90{{ /if }} z-0 js-show-on-scroll">
       <div class="absolute inset-0">
         <img class="h-full w-full object-cover {{ project_alignment }}" src="{{ glide:lead_image fm="jpg" height="1600" fit="crop_focal" }}" alt="">
       </div>
@@ -29,6 +35,49 @@
       </svg>
     </div>
 </div>
+
+<div class="w-full inline-flex items-center justify-between h-screen-10 px-2 lg:px-4 {{ if description == "" || description == "<p></p>" }}mb-16{{ /if }}">
+  {{ collection:previous in="interiors" as="entries" limit="1" sort="order" in_progress:isnt="true" }}
+    {{ if no_results }}
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 opacity-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M15 19l-7-7 7-7" />
+      </svg>
+    {{ /if }}
+    {{ entries }}
+      <a href="{{ url }}" class="block">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M15 19l-7-7 7-7" />
+        </svg>
+      </a>
+    {{ /entries }}
+  {{ /collection:previous }}
+  <div class="text-center max-w-xl">
+    <h1 class="block f6 m-0 font-louizeDisplay text-xl md:text-2xl leading-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}...</h1>
+  </div>
+  <div class="">
+    {{ collection:next in="interiors" as="entries" limit="1" sort="order" in_progress:isnt="true" }}
+      {{ if no_results }}
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-black opacity-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M9 5l7 7-7 7" />
+      </svg>
+      {{ /if }}
+      {{ entries }}
+        <a href="{{ url }}" class="block">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      {{ /entries }}
+    {{ /collection:next }}
+  </div>
+</div>
+
+{{ if description != "" && description != "<p></p>" }}
+<div class="project-description px-8 mb-20 max-w-xl m-auto text-center text-base md:text-lg">
+  {{ description }}
+</div>
+{{ /if }}
+
 
 {{ partial:projects/images-grid }}
 

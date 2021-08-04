@@ -1,6 +1,6 @@
 <div class="relative w-full h-screen-90">
   <div class="absolute inset-0 max-h-screen-90">
-    <img class="h-full w-full max-h-screen-90 object-cover {{ title_alignment }}" src="{{ glide:background_image width="1200" height="1200" fit="contain" fm="jpg" }}">
+    <img class="h-full w-full max-h-screen-90 object-cover {{ title_alignment }}" src="{{ glide:background_image width="1600" height="1600" fit="contain" fm="jpg" }}">
   </div>
   {{ if title_overlay != "none" and title_overlay != null }}
   <div class="absolute inset-0 {{ if title_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ title_opacity }}">
@@ -9,6 +9,19 @@
   <div class="absolute inset-0 {{ title_text_colour }}">
     <h1 class="absolute uppercase text-5xl sm:text-6xl font-thin  mb-0 bottom-16 sm:bottom-20 left-10 sm:left-16">Hollie<br/>Bowden</h1>
   </div>
+</div>
+
+<div class="relative grid grid-flow-row grid-cols-1 bg-offwhite h-screen-90 js-show-on-scroll">
+  <div class="absolute inset-0 max-h-screen-90">
+    {{ if interiors_overlay != "none" and interiors_overlay != null }}
+    <div class="absolute inset-0 {{ if interiors_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ interiors_opacity }} md:bg-transparent">
+    </div>
+    {{ /if }}
+    <img class="h-full w-full max-h-screen-90 object-cover {{ interiors_alignment }}" src="{{ glide:interiors_image width="1600" height="1600" fit="contain" fm="jpg" }}" alt="">
+  </div>
+  <a href="/interiors" class="absolute inset-0 {{ interiors_text_colour }}">
+    <h1 class="absolute text-3xl sm:text-6xl font-thin mb-0 bottom-10 sm:bottom-20 right-10 sm:right-16 js-show-on-scroll">interiors</h1>
+  </a>
 </div>
 
 {{ if display_profile == true }}
@@ -25,19 +38,6 @@
   </a>
 </div>
 {{ /if }}
-
-<div class="relative grid grid-flow-row grid-cols-1 bg-offwhite h-screen-90 js-show-on-scroll">
-  <div class="absolute inset-0 max-h-screen-90">
-    {{ if interiors_overlay != "none" and interiors_overlay != null }}
-    <div class="absolute inset-0 {{ if interiors_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ interiors_opacity }} md:bg-transparent">
-    </div>
-    {{ /if }}
-    <img class="h-full w-full max-h-screen-90 object-cover {{ interiors_alignment }}" src="{{ glide:interiors_image width="1200" height="1200" fit="contain" fm="jpg" }}" alt="">
-  </div>
-    <a href="/interiors" class="absolute inset-0 {{ interiors_text_colour }}">
-      <h1 class="absolute text-3xl sm:text-6xl font-thin mb-0 bottom-10 sm:bottom-20 right-10 sm:right-16 js-show-on-scroll">interiors</h1>
-    </a>
-</div>
 
 <div class="relative grid grid-flow-row grid-cols-1 h-screen-90 js-show-on-scroll">
   <div class="absolute inset-0 flex items-center">
