@@ -83,6 +83,9 @@ sections:
           icon: assets
           listable: hidden
       -
+        import: full_screen_style
+        prefix: project_
+      -
         handle: images
         field:
           type: assets
@@ -95,10 +98,7 @@ sections:
           allow_uploads: true
   style:
     display: Style
-    fields:
-      -
-        import: full_screen_style
-        prefix: project_
+    fields: {  }
   sidebar:
     display: Sidebar
     fields:
