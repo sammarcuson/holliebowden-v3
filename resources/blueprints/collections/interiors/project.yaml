@@ -36,18 +36,17 @@ sections:
           buttons:
             - bold
             - italic
-            - unorderedlist
-            - orderedlist
-            - html
-            - quote
-            - codeblock
-            - h1
-            - h2
-            - h3
-            - h4
-            - h5
-            - h6
-            - anchor
+          listable: hidden
+          always_show_set_button: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
       -
         handle: photographer
         field:
