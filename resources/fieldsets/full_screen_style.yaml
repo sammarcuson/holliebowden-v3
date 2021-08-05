@@ -13,37 +13,7 @@ fields:
       type: radio
       icon: radio
       listable: hidden
-      width: 33
-  -
-    handle: overlay
-    field:
-      options:
-        none: None
-        dark: Dark
-        light: Light
-      default: none
-      inline: false
-      cast_booleans: false
-      display: Overlay
-      type: radio
-      icon: radio
-      instructions: 'Adds an overlay the lead image.'
-      listable: hidden
-      width: 33
-  -
-    handle: opacity
-    field:
-      step: 10
-      min: 10
-      max: 90
-      default: 20
-      display: Opacity
-      type: range
-      icon: range
-      listable: hidden
-      if:
-        overlay: 'not none'
-      width: 33
+      width: 50
   -
     handle: alignment
     field:
@@ -64,4 +34,34 @@ fields:
       type: radio
       icon: radio
       listable: hidden
-      width: 33
+      width: 50
+  -
+    handle: overlay
+    field:
+      options:
+        none: None
+        dark: Dark
+        light: Light
+      default: none
+      inline: false
+      cast_booleans: false
+      display: Overlay
+      type: radio
+      icon: radio
+      instructions: 'Adds an overlay the lead image.'
+      listable: hidden
+      width: 50
+  -
+    handle: opacity
+    field:
+      step: 10
+      min: 10
+      max: 90
+      default: 20
+      display: Opacity
+      type: range
+      icon: range
+      listable: hidden
+      if:
+        overlay: 'not none'
+      width: 50
