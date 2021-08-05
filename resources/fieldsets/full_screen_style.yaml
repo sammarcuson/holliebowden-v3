@@ -13,6 +13,7 @@ fields:
       type: radio
       icon: radio
       listable: hidden
+      width: 33
   -
     handle: overlay
     field:
@@ -28,6 +29,7 @@ fields:
       icon: radio
       instructions: 'Adds an overlay the lead image.'
       listable: hidden
+      width: 33
   -
     handle: opacity
     field:
@@ -41,6 +43,7 @@ fields:
       listable: hidden
       if:
         overlay: 'not none'
+      width: 33
   -
     handle: alignment
     field:
@@ -61,3 +64,4 @@ fields:
       type: radio
       icon: radio
       listable: hidden
+      width: 33
