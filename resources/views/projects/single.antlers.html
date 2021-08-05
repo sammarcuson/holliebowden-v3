@@ -36,43 +36,7 @@
     </div>
 </div>
 
-<div class="group w-full inline-flex items-center justify-between h-screen-10 px-2 lg:px-4 {{ if description == "" || description == "<p></p>" }}mb-16{{ /if }}">
-  {{ collection:previous in="interiors" as="entries" limit="1" sort="order" in_progress:isnt="true" }}
-    {{ if no_results }}
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 opacity-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M15 19l-7-7 7-7" />
-      </svg>
-    {{ /if }}
-    {{ entries }}
-    <a href="{{ url }}" class="inline-flex items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M15 19l-7-7 7-7" />
-        </svg>
-        <span class="hidden md:block transition-opacity opacity-0 duration-500 group-hover:opacity-100">Previous Project</span>
-      </a>
-    {{ /entries }}
-  {{ /collection:previous }}
-  <div class="text-center max-w-xl">
-    <h1 class="block f6 m-0 font-louizeDisplay text-xl md:text-2xl leading-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}...</h1>
-  </div>
-  <div class="">
-    {{ collection:next in="interiors" as="entries" limit="1" sort="order" in_progress:isnt="true" }}
-      {{ if no_results }}
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-black opacity-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M9 5l7 7-7 7" />
-      </svg>
-      {{ /if }}
-      {{ entries }}
-        <a href="{{ url }}" class="inline-flex items-center">
-          <span class="hidden md:block  transition-opacity opacity-0 duration-500 group-hover:opacity-100 pl-4">Next Project</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
-      {{ /entries }}
-    {{ /collection:next }}
-  </div>
-</div>
+{{ partial:projects/nav2 }}
 
 {{ if description != "" && description != "<p></p>" }}
 <div class="project-description px-8 mb-20 max-w-xl m-auto text-center text-base md:text-lg">
