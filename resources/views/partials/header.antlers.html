@@ -1,12 +1,12 @@
 
-  <nav id="topstrap" x-data="{ showMobileMenu: false }" class="{{ if blueprint == "project" }}absolute w-full{{ /if }} z-40 transition-all h-1/3 group">
+  <nav id="topstrap" x-data="{ showMobileMenu: false }" class="{{ if blueprint | contains:Project  }}absolute w-full transition-all h-1/3 group{{ /if }} z-40 ">
     <div class="mx-auto px-4 sm:px-6 lg:px-8 xl:mt-2">
       <div class="flex justify-between h-16">
         <div class="flex items-end {{ if project_text_colour }}{{ project_text_colour }}{{ else }}text-black{{ /if }}">
           <div class="flex-shrink-0 flex items-center">
             <h1 class="uppercase block leading-none m-0 text-xl xl:text-2xl xl:leading-none"><a href="/" class="hover:text-lightblack transition-colors">Hollie<br />Bowden</a></h1>
           </div>
-          <div class="hidden sm:ml-6 sm:flex xl:opacity-0 group-hover:opacity-100 transition-opacity duration-500 space-x-6 font-louizeDisplay">
+          <div class="hidden sm:ml-6 sm:flex {{ if blueprint | contains:Project  }}xl:opacity-0 group-hover:opacity-100 transition-opacity duration-500{{ /if }} space-x-6 font-louizeDisplay">
             <!-- Current: " text-gray-900", Default: "border-transparent hover:text-lightblack" -->
             <a href="/interiors" class="border-transparent hover:text-lightblack inline-flex items-center px-1 pt-1 border-b-2 text-lg font-semibold leading-none transition-colors">
               interiors
