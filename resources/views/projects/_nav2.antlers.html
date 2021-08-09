@@ -1,4 +1,4 @@
-<div class="group w-full inline-flex items-center justify-between h-screen-10 px-2 lg:px-4 {{ if description == "" || description == "<p></p>" }}mb-16{{ /if }}">
+<div class="group w-full inline-flex items-center justify-between h-screen-10 px-2 lg:px-4 {{ if description == "" || description == "<p></p>" && !photographer }}mb-16{{ /if }}">
   {{ collection:previous in="interiors" as="entries" limit="1" sort="order" in_progress:isnt="true" }}
     {{ if no_results }}
     <div class="inline-flex items-center opacity-0">
@@ -18,7 +18,7 @@
     {{ /entries }}
   {{ /collection:previous }}
   <div class="text-center max-w-xl">
-    <h1 class="block f6 m-0 font-louizeDisplay text-xl md:text-2xl leading-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}...</h1>
+    <h1 class="block f6 m-0 font-louizeDisplay text-xl md:text-2xl leading-none">{{ title }}{{ if location }}, {{ location }}{{ /if }}.</h1>
   </div>
   <div class="">
     {{ collection:next in="interiors" as="entries" limit="1" sort="order" in_progress:isnt="true" }}
