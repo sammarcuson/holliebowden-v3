@@ -44,11 +44,9 @@
   window.addEventListener('scroll', function(){
     // detects new state and compares it with the new one
     if ((document.body.getBoundingClientRect()).top < -80)
-      document.getElementById('projectDetails').classList.add('opacity-0'),
       document.getElementById('scrollIndicator').classList.add('opacity-0'),
       console.log("scrollposition is " + scrollPos);
     else if ((document.body.getBoundingClientRect()).top > scrollPos)
-      document.getElementById('projectDetails').classList.remove('opacity-0'),
       document.getElementById('scrollIndicator').classList.remove('opacity-0'),
       console.log("scrollposition is " + scrollPos);
     else
