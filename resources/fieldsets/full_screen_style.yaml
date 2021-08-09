@@ -9,7 +9,7 @@ fields:
       default: text-black
       inline: false
       cast_booleans: false
-      display: 'Text Colour'
+      display: 'Menu Text Colour'
       type: radio
       icon: radio
       listable: hidden
