@@ -15,6 +15,7 @@ preferences:
         - date
         - project_type
         - in_progress
+        - photographer_website
   assets:
     assets:
       mode: grid
