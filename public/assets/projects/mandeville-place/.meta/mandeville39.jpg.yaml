@@ -1,9 +1,9 @@
 data:
-  image_align: left
-  display_inline: false
+  image_align: right
+  display_inline: true
   padding: p-0
 size: 585930
-last_modified: 1625562253
+last_modified: 1627379618
 width: 2364
 height: 3543
 mime_type: image/jpeg
