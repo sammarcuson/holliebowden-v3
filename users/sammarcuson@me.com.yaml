@@ -16,6 +16,7 @@ preferences:
         - project_type
         - in_progress
         - photographer_website
+      after_save: continue_editing
   assets:
     assets:
       mode: grid
