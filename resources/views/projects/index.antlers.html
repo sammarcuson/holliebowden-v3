@@ -2,12 +2,8 @@
   {{ collection:interiors sort="order" }}
   <li class="relative col-span-1 group js-show-on-scroll">
     <div class="block w-full aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
-      {{ assets:images limit="1" }}
-      {{ if first }}
-      <img src="{{ glide:url width="900" height="600" fit="crop_focal" fm="jpg" }}" alt="" class="w-full object-cover pointer-events-none">
-      {{ else }}
-      {{ /if }}
-      {{ /assets:images }}
+
+      <img src="{{ if project_image }}{{ glide:project_image width="900" height="600" fit="crop_focal" fm="jpg" }}{{ elseif images }}{{ assets:images limit="1" }}{{ if first }}{{ glide:url width="900" height="600" fit="crop_focal" fm="jpg" }}{{ /if }}{{ /assets:images }}{{ else }}public/assets/site/blank.gif{{ /if }}" alt="" class="w-full object-cover pointer-events-none">
 
       {{ if ! in_progress }}
         <a href="{{ url }}" class="absolute inset-0 focus:outline-none">
