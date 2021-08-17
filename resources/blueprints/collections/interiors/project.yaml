@@ -102,7 +102,7 @@ sections:
         handle: images
         field:
           type: assets
-          display: Images
+          display: Gallery
           container: assets
           folder: projects
           listable: hidden
