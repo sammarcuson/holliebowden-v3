@@ -71,6 +71,19 @@ sections:
     display: Images
     fields:
       -
+        handle: project_image
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Project Image'
+          type: assets
+          icon: assets
+          instructions: 'Used on the Interiors index page.'
+          listable: hidden
+      -
         handle: lead_image
         field:
           mode: grid
@@ -89,7 +102,7 @@ sections:
         handle: images
         field:
           type: assets
-          display: Images
+          display: Gallery
           container: assets
           folder: projects
           listable: hidden
