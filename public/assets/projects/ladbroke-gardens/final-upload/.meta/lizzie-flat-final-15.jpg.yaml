@@ -1,10 +1,10 @@
 data:
   image_display: float-left
-  image_align: left
+  image_align: center
   display_inline: false
   padding: p-0
 size: 1599715
-last_modified: 1625562250
+last_modified: 1627379612
 width: 2304
 height: 3452
 mime_type: image/jpeg
