@@ -1,6 +1,9 @@
-data: {  }
+data:
+  image_align: center
+  display_inline: false
+  padding: 'px-12 lg:px-32'
 size: 1716071
-last_modified: 1625562241
+last_modified: 1627379608
 width: 9000
 height: 6007
 mime_type: image/jpeg
