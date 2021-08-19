@@ -1,5 +1,5 @@
 data:
-  image_align: right
+  image_align: left
   display_inline: false
   padding: 'px-4 md:px-12'
   focus: 51-40-1
