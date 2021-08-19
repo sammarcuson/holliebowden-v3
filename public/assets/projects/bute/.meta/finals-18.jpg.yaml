@@ -3,7 +3,7 @@ data:
   do_not_wrap: false
   image_align: right
   display_inline: true
-  padding: 'px-4 md:px-12'
+  padding: 'px-12 lg:px-32'
 size: 5715860
 last_modified: 1627379608
 width: 2857
