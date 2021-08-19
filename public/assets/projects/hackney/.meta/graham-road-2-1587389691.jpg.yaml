@@ -1,11 +1,11 @@
 data:
   do_not_wrap: true
-  image_align: justify-end
+  image_align: right
   padding: heavy
-  display_inline: false
+  display_inline: true
   focus: 50-35-1
 size: 1427539
-last_modified: 1625562245
+last_modified: 1627379611
 width: 2002
 height: 3000
 mime_type: image/jpeg
