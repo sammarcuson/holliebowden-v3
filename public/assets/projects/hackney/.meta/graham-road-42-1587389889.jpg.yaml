@@ -1,6 +1,6 @@
 data:
-  image_align: right
-  display_inline: true
+  image_align: left
+  display_inline: false
   padding: p-0
 size: 964844
 last_modified: 1627379611
