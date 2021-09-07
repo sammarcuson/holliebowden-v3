@@ -1,7 +1,7 @@
 <div class="w-full m-auto">
   <div class="relative {{ if (images | count) < 2 }}h-screen{{ else }}h-screen-90{{ /if }} z-0 js-show-on-scroll">
     <div class="absolute inset-0">
-      <img class="h-full w-full object-cover {{ project_alignment }}" src="{{ glide:lead_image fm="jpg" height="1600" fit="crop_focal" }}" alt="">
+      <img class="h-full w-full object-cover {{ project_alignment }}" src="{{ glide:lead_image fm="jpg" width="2000" fit="crop_focal" }}" alt="">
     </div>
 
     {{ if project_overlay != "none" and project_overlay != null }}
