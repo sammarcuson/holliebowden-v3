@@ -1,5 +1,5 @@
 data:
-  image_align: center
+  image_align: left
   display_inline: true
   padding: 'px-4 md:px-12'
 size: 9571189
