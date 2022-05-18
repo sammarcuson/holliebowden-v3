@@ -1,6 +1,6 @@
 data:
   image_align: center
-  display_inline: false
+  display_inline: true
   padding: 'px-4 md:px-12'
 size: 9571189
 last_modified: 1652804180
