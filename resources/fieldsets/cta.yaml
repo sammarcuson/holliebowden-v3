@@ -16,3 +16,15 @@ fields:
       type: text
       icon: text
       listable: hidden
+  -
+    handle: cta_style
+    field:
+      options:
+        dark: Dark
+        light: Light
+      inline: false
+      cast_booleans: false
+      display: 'CTA Style'
+      type: radio
+      icon: radio
+      listable: hidden
