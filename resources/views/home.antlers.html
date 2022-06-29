@@ -7,7 +7,7 @@
   </div>
   {{ /if }}
   <div class="absolute inset-0 {{ title_text_colour }}">
-    <h1 class="absolute uppercase text-5xl sm:text-6xl font-thin  mb-0 bottom-16 sm:bottom-20 left-10 sm:left-16">Hollie<br/>Bowden</h1>
+    <h1 class="absolute uppercase text-5xl sm:text-6xl md:text-7xl font-thin  mb-0 bottom-16 sm:bottom-20 left-10 sm:left-16">Hollie<br/>Bowden</h1>
   </div>
 </div>
 
@@ -41,17 +41,27 @@
 </div>
 {{ /if }}
 
+
+{{ if shop_display == true }}
 <div class="relative grid grid-flow-row grid-cols-1 h-screen-90 js-show-on-scroll">
   <div class="absolute inset-0 flex items-center">
     <div class="w-full text-center p-16 flex flex-col items-center js-show-on-scroll">
-      <img src="/assets/site/shop-bag.png" class="w-24 m-auto mb-6" alt="">
-      <h1 class="text-3xl text-center inline-block sm:text-6xl font-thin text-black mb-6">Shop</h1>
-      <p class="text-xl mb-6 max-w-lg">Our online store is now open.</p>
-      <a href="https://shop.holliebowden.com" class="cursor-pointer inline-flex items-center px-4 py-2 text-base font-medium rounded-sm shadow-sm text-offwhite bg-black hover:bg-lightblack text-black transition-colors">Shop Now</a>
+      {{ if shop_image }}
+      <img src="{{ glide:shop_image fit="contain" fm="png" }}" class="w-24 m-auto mb-6" alt="">{{ /if }}
+      {{ if shop_heading }}
+      <h1 class="text-3xl text-center inline-block sm:text-6xl font-thin text-black mb-6">{{ shop_heading }}</h1>{{ /if }}
+      {{ if shop_body }}
+      <div class="text-xl mb-6 max-w-lg">
+        {{ shop_body }}
+      </div>
+      {{ /if }}
+      {{ if shop_cta_link && shop_cta_text }}
+        <a href="{{ shop_cta_link }}" class="cursor-pointer inline-flex items-center px-4 py-2 text-base font-medium rounded-sm shadow-sm text-offwhite bg-black hover:bg-lightblack text-black transition-colors">{{ shop_cta_text }}</a>
+      {{ /if }}
     </div>
   </div>
 </div>
-
+{{ /if }}
 
 <script type="text/javascript">
 
