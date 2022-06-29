@@ -122,8 +122,8 @@ sections:
           max_items: 1
           listable: false
           localizable: true
-  shop:
-    display: Shop
+  newsletter:
+    display: Newsletter
     fields:
       -
         import: display
