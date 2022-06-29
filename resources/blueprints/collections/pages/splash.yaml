@@ -96,32 +96,6 @@ sections:
       -
         import: full_screen_style
         prefix: interiors_
-  sidebar:
-    display: Sidebar
-    fields:
-      -
-        handle: slug
-        field:
-          type: slug
-          localizable: true
-          validate:
-            - required
-      -
-        handle: date
-        field:
-          type: date
-          required: true
-          validate:
-            - required
-      -
-        handle: parent
-        field:
-          type: entries
-          collections:
-            - pages
-          max_items: 1
-          listable: false
-          localizable: true
   newsletter:
     display: Newsletter
     fields:
@@ -185,3 +159,32 @@ sections:
       -
         import: cta
         prefix: newsletter_
+      -
+        import: display
+        prefix: newsletter_
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
