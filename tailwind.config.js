@@ -97,4 +97,12 @@ module.exports = {
   plugins: [
 
   ],
+  purge: {
+    content: [
+      './resources/views/**/*.html',
+      './resources/js/**/*.js',
+    ],
+    safelist: [],
+    layers: ['components', 'utilities'],
+  },
 }
