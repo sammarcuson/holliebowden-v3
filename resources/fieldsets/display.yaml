@@ -1,2 +1,9 @@
 title: Display
-fields: {  }
+fields:
+  -
+    handle: display
+    field:
+      display: Display
+      type: toggle
+      icon: toggle
+      listable: hidden
