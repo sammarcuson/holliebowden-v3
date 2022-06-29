@@ -127,9 +127,9 @@ sections:
     fields:
       -
         import: display
-        prefix: shop_
+        prefix: newsletter_
       -
-        handle: shop_image
+        handle: newsletter_image
         field:
           mode: grid
           restrict: false
@@ -145,9 +145,9 @@ sections:
           show_filename: true
       -
         import: full_screen_style
-        prefix: shop_
+        prefix: newsletter_
       -
-        handle: shop_heading
+        handle: newsletter_heading
         field:
           input_type: text
           antlers: false
@@ -155,8 +155,10 @@ sections:
           type: text
           icon: text
           listable: hidden
+          instructions_position: above
+          read_only: false
       -
-        handle: shop_body
+        handle: newsletter_body
         field:
           always_show_set_button: false
           buttons:
@@ -177,6 +179,9 @@ sections:
           type: bard
           icon: bard
           listable: hidden
+          instructions_position: above
+          read_only: false
+          antlers: false
       -
         import: cta
-        prefix: shop_
+        prefix: newsletter_
