@@ -116,6 +116,7 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+          max_files: 1
       -
         import: full_screen_style
         prefix: shop_
