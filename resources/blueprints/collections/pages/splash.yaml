@@ -121,6 +121,9 @@ sections:
     display: Shop
     fields:
       -
+        import: display
+        prefix: shop_
+      -
         handle: shop_image
         field:
           mode: grid
