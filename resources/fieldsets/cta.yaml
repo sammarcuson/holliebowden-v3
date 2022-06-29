@@ -1,2 +1,18 @@
 title: CTA
-fields: {  }
+fields:
+  -
+    handle: cta_link
+    field:
+      display: 'CTA Link'
+      type: link
+      icon: link
+      listable: hidden
+  -
+    handle: cta_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'CTA text'
+      type: text
+      icon: text
+      listable: hidden
