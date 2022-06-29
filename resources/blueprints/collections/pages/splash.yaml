@@ -162,10 +162,3 @@ sections:
           type: bard
           icon: bard
           listable: hidden
-      -
-        handle: shop_cta
-        field:
-          display: 'Shop CTA'
-          type: link
-          icon: link
-          listable: hidden
