@@ -97,7 +97,6 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
           validate:
             - required
@@ -134,6 +133,9 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+      -
+        import: full_screen_style
+        prefix: shop_
       -
         handle: shop_heading
         field:
