@@ -127,12 +127,12 @@ sections:
           restrict: false
           allow_uploads: true
           max_files: 1
-          display: 'Shop image'
+          display: Image
           type: assets
           icon: assets
           listable: hidden
       -
-        handle: heading
+        handle: shop_heading
         field:
           input_type: text
           antlers: false
@@ -158,10 +158,10 @@ sections:
           allow_source: true
           enable_input_rules: true
           enable_paste_rules: true
-          display: 'Shop body'
+          display: Body
           type: bard
           icon: bard
           listable: hidden
       -
         import: cta
-        prefix: homepage_shop_
+        prefix: shop_
