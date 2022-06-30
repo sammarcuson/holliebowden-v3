@@ -1,6 +1,23 @@
 title: Treatments
 fields:
   -
+    handle: default_styles
+    field:
+      display: 'Mobile Styles'
+      type: section
+      icon: section
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    import: text_colour
+  -
+    import: text_colour_md
+  -
+    import: text_colour_lg
+  -
+    import: image_alignment
+  -
     handle: responsive
     field:
       default: false
@@ -11,31 +28,14 @@ fields:
       instructions_position: above
       read_only: false
   -
-    handle: treatment_view
+    handle: tablet_styles
     field:
-      options:
-        sm: Default/Mobile
-        md: Medium/Tablet
-        lg: Large/Desktop
-      inline: true
-      cast_booleans: false
-      display: View
-      type: radio
-      icon: radio
+      display: 'Tablet Styles'
+      type: section
+      icon: section
       listable: hidden
       instructions_position: above
       read_only: false
-      default: sm
-      if:
-        responsive: 'equals true'
-  -
-    import: text_colour
-  -
-    import: text_colour_md
-  -
-    import: text_colour_lg
-  -
-    import: image_alignment
   -
     import: image_alignment_md
   -
