@@ -11,6 +11,7 @@ fields:
       type: range
       icon: range
       listable: hidden
+      width: 25
       if:
         overlay: 'not none'
-      width: 25
+        treatment_view: 'equals sm'
