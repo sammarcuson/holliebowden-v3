@@ -67,3 +67,14 @@ fields:
     import: opacity_md
   -
     import: opacity_lg
+  -
+    handle: desktop_styles
+    field:
+      display: 'Desktop Styles'
+      type: section
+      icon: section
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      if:
+        respopnsive: 'equals true'
