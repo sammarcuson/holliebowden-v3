@@ -120,12 +120,6 @@ sections:
       -
         import: image_style
         prefix: shop_
-      -
-        import: image_style
-        prefix: 'md:'
-      -
-        import: image_style
-        prefix: 'lg:'
   newsletter:
     display: Newsletter
     fields:
