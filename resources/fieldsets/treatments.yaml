@@ -26,6 +26,7 @@ fields:
       instructions_position: above
       read_only: false
       default: sm
+      width: 33
       if:
         responsive: 'equals true'
   -
