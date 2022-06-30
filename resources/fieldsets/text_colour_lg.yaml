@@ -17,4 +17,4 @@ fields:
       instructions_position: above
       read_only: false
       if:
-        treatment_view: 'equals lg'
+        responsive: 'equals true'

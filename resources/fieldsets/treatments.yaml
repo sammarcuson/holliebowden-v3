@@ -37,8 +37,6 @@ fields:
   -
     import: text_colour
   -
-    import: text_colour_md
-  -
     import: image_alignment
   -
     handle: tablet_styles
@@ -52,6 +50,8 @@ fields:
       if:
         responsive: 'equals true'
       instructions: 'Applied to tablet and desktop, unless desktop styles found.'
+  -
+    import: text_colour_md
   -
     import: image_alignment_md
   -
