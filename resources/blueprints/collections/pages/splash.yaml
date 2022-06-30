@@ -117,9 +117,6 @@ sections:
           instructions_position: above
           read_only: false
           max_files: 1
-      -
-        import: treatments
-        prefix: shop_
   newsletter:
     display: Newsletter
     fields:
