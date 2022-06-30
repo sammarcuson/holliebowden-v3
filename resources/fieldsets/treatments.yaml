@@ -1,15 +1,6 @@
 title: Treatments
 fields:
   -
-    handle: treatment
-    field:
-      display: Treatment
-      type: section
-      icon: section
-      listable: hidden
-      instructions_position: above
-      read_only: false
-  -
     handle: responsive
     field:
       default: false
