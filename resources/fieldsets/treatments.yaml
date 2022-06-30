@@ -28,3 +28,9 @@ fields:
     import: image_alignment_md
   -
     import: image_alignment_lg
+  -
+    import: opacity
+  -
+    import: opacity_md
+  -
+    import: opacity_lg
