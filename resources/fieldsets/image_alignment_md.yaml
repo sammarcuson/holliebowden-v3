@@ -1,0 +1,23 @@
+title: 'Image Alignment Medium'
+fields:
+  -
+    handle: alignment
+    field:
+      options:
+        'md:object-center': Center
+        'md:object-top': Top
+        'md:object-left-top': 'Top Left'
+        'md:object-left': Left
+        'md:object-left-bottom': 'Bottom Left'
+        'md:object-bottom': Bottom
+        'md:object-right-bottom': 'Bottom Right'
+        'md:object-right': Right
+        'md:object-right-top': 'Top Right'
+      default: object-center
+      inline: false
+      cast_booleans: false
+      display: Alignment
+      type: radio
+      icon: radio
+      listable: hidden
+      width: 25
