@@ -1,6 +1,16 @@
 title: Treatments
 fields:
   -
+    handle: responsive
+    field:
+      default: false
+      display: Responsive
+      type: toggle
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
     handle: treatment_view
     field:
       options:
@@ -9,7 +19,7 @@ fields:
         lg: Large/Desktop
       inline: true
       cast_booleans: false
-      display: 'View Treatment'
+      display: View
       type: radio
       icon: radio
       listable: hidden
@@ -17,26 +27,8 @@ fields:
       read_only: false
       default: sm
   -
-    import: text_colour
-  -
-    import: text_colour_md
-  -
-    import: text_colour_lg
-  -
     import: image_alignment
   -
     import: image_alignment_md
   -
     import: image_alignment_lg
-  -
-    import: overlay
-  -
-    import: overlay_md
-  -
-    import: overlay_lg
-  -
-    import: opacity
-  -
-    import: opacity_md
-  -
-    import: opacity_lg
