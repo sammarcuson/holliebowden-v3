@@ -16,5 +16,3 @@ fields:
       instructions_position: above
       read_only: false
       default: sm
-  -
-    import: treatment_settings
