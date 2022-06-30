@@ -17,6 +17,4 @@ fields:
       read_only: false
       default: sm
   -
-    import: image_alignment
-  -
     import: image_alignment_md
