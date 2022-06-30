@@ -1,6 +1,21 @@
 title: Treatments
 fields:
   -
+    handle: view
+    field:
+      options:
+        sm: Default/Mobile
+        md: Medium/Tablet
+        lg: Large/Desktop
+      inline: false
+      cast_booleans: false
+      display: View
+      type: radio
+      icon: radio
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
     import: treatment_settings
   -
     import: treatment_settings_medium
