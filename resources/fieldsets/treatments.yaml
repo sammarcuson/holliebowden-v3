@@ -22,6 +22,14 @@ fields:
       if:
         responsive: 'equals false'
   -
+    import: text_colour
+  -
+    import: text_colour_md
+  -
+    import: text_colour_lg
+  -
+    import: image_alignment
+  -
     handle: default_styles
     field:
       display: 'Mobile Styles'
@@ -32,14 +40,6 @@ fields:
       read_only: false
       if:
         responsive: 'equals true'
-  -
-    import: text_colour
-  -
-    import: text_colour_md
-  -
-    import: text_colour_lg
-  -
-    import: image_alignment
   -
     handle: tablet_styles
     field:
