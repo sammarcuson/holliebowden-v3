@@ -120,41 +120,6 @@ sections:
       -
         import: full_screen_style
         prefix: shop_
-      -
-        handle: image_tablet
-        field:
-          mode: list
-          container: assets
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          max_files: 1
-          display: 'Image Tablet'
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
-        import: full_screen_style
-        prefix: 'md:'
-      -
-        handle: image_laptop
-        field:
-          mode: list
-          container: assets
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          display: 'Image Laptop/Desktop'
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
-        import: full_screen_style
-        prefix: 'lg:'
   newsletter:
     display: Newsletter
     fields:
