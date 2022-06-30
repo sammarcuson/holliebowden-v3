@@ -15,5 +15,4 @@ fields:
       instructions_position: above
       read_only: false
       if:
-        overlay: 'not none'
-        responsive: 'equals true'
+        overlay_md: 'not none'
