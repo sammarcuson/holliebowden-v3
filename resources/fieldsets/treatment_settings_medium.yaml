@@ -3,3 +3,5 @@ fields:
   -
     import: treatment_settings
     prefix: 'md:'
+    if:
+        treatment_view: 'equals md'
