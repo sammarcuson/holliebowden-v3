@@ -1,12 +1,22 @@
 title: Treatments
 fields:
   -
+    handle: treatment
+    field:
+      display: Treatment
+      type: section
+      icon: section
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
     handle: responsive
     field:
       default: false
       display: Responsive
       type: toggle
       icon: toggle
+      width: 25
       listable: hidden
       instructions_position: above
       read_only: false
@@ -26,6 +36,7 @@ fields:
       instructions_position: above
       read_only: false
       default: sm
+      width: 75
       if:
         responsive: 'equals true'
   -
