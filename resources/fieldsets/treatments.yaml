@@ -1,7 +1,7 @@
 title: Treatments
 fields:
   -
-    handle: treatment_view
+    handle: view
     field:
       options:
         sm: Default/Mobile
