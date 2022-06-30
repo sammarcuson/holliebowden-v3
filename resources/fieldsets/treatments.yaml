@@ -18,3 +18,5 @@ fields:
       default: sm
   -
     import: image_alignment_md
+  -
+    import: image_alignment
