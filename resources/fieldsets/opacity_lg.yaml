@@ -16,4 +16,4 @@ fields:
       read_only: false
       if:
         responsive: 'equals true'
-        overlay_lg: 'equals lg:light'
+        overlay_lg: 'not null'
