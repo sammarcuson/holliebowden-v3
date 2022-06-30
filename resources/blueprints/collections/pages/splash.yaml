@@ -29,7 +29,7 @@ sections:
           restrict: false
           allow_uploads: true
       -
-        import: treatment
+        import: treatments
         prefix: title_
   profile:
     display: Profile
@@ -57,7 +57,7 @@ sections:
           read_only: false
           show_filename: true
       -
-        import: treatment
+        import: treatments
         prefix: profile_
       -
         handle: quote
@@ -94,7 +94,7 @@ sections:
           read_only: false
           show_filename: true
       -
-        import: treatment
+        import: treatments
         prefix: interiors_
   shop:
     display: Shop
@@ -118,7 +118,7 @@ sections:
           read_only: false
           max_files: 1
       -
-        import: treatment
+        import: treatments
         prefix: shop_
   newsletter:
     display: Newsletter
