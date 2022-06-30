@@ -1,0 +1,20 @@
+title: Treatment
+fields:
+  -
+    handle: mobile_default
+    field:
+      mode: button
+      display: Mobile/Default
+      type: revealer
+      icon: revealer
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    import: text_colour
+  -
+    import: image_alignment
+  -
+    import: overlay
+  -
+    import: opacity
