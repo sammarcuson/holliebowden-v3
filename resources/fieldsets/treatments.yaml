@@ -26,8 +26,8 @@ fields:
       instructions_position: above
       read_only: false
       default: sm
-      unless:
-        responsive: 'equals false'
+      if:
+        responsive: 'equals true'
   -
     import: image_alignment
   -
