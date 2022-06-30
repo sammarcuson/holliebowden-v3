@@ -110,7 +110,7 @@ sections:
           restrict: false
           allow_uploads: true
           show_filename: true
-          display: 'Image Mobile'
+          display: 'Image Mobile/Default'
           type: assets
           icon: assets
           listable: hidden
