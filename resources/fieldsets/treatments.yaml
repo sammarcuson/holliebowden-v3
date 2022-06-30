@@ -3,6 +3,15 @@ fields:
   -
     handle: default_styles
     field:
+      display: 'Default Styles'
+      type: section
+      icon: section
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: default_styles
+    field:
       display: 'Mobile Styles'
       type: section
       icon: section
