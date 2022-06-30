@@ -77,4 +77,4 @@ fields:
       instructions_position: above
       read_only: false
       if:
-        respopnsive: 'equals true'
+        responsive: 'equals true'
