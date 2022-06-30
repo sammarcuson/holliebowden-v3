@@ -1,6 +1,16 @@
 title: Treatments
 fields:
   -
+    handle: responsive
+    field:
+      default: false
+      display: Responsive
+      type: toggle
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
     handle: treatment_view
     field:
       options:
@@ -16,6 +26,8 @@ fields:
       instructions_position: above
       read_only: false
       default: sm
+      if:
+        responsive: 'equals true'
   -
     import: text_colour
   -
