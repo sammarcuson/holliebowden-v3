@@ -7,8 +7,9 @@ fields:
         sm: Mobile/Default
         md: Tablet/Mid
         lg: Laptop/Full
-      inline: false
+      inline: true
       cast_booleans: false
+      default: sm
       display: Views
       type: radio
       icon: radio
