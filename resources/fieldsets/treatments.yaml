@@ -1,7 +1,7 @@
 title: Treatments
 fields:
   -
-    handle: view
+    handle: treatment_view
     field:
       options:
         sm: Default/Mobile
@@ -9,7 +9,7 @@ fields:
         lg: Large/Desktop
       inline: true
       cast_booleans: false
-      display: 'View Treatment'
+      display: View
       type: radio
       icon: radio
       listable: hidden
@@ -17,6 +17,6 @@ fields:
       read_only: false
       default: sm
   -
-    import: image_alignment_md
-  -
     import: image_alignment
+  -
+    import: image_alignment_md
