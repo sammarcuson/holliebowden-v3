@@ -1,12 +1,13 @@
 title: Treatment
 fields:
   -
-    handle: mobile_default
+    handle: treatment_views
     field:
-      mode: button
-      display: Mobile/Default
-      type: revealer
-      icon: revealer
+      inline: false
+      cast_booleans: false
+      display: Views
+      type: radio
+      icon: radio
       listable: hidden
       instructions_position: above
       read_only: false
