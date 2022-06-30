@@ -98,9 +98,6 @@ sections:
         import: treatments
         prefix: project_
       -
-        import: image_style
-        prefix: project_
-      -
         handle: images
         field:
           type: assets
