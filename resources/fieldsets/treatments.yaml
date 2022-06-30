@@ -7,7 +7,7 @@ fields:
         sm: Default/Mobile
         md: Medium/Tablet
         lg: Large/Desktop
-      inline: false
+      inline: true
       cast_booleans: false
       display: View
       type: radio
