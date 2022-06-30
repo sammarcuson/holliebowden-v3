@@ -96,7 +96,7 @@ sections:
           icon: assets
           listable: hidden
       -
-        import: full_screen_style
+        import: image_style
         prefix: project_
       -
         handle: images

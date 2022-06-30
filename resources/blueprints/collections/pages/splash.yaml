@@ -29,7 +29,7 @@ sections:
           restrict: false
           allow_uploads: true
       -
-        import: full_screen_style
+        import: image_style
         prefix: title_
   profile:
     display: Profile
@@ -57,7 +57,7 @@ sections:
           read_only: false
           show_filename: true
       -
-        import: full_screen_style
+        import: image_style
         prefix: profile_
       -
         handle: quote
@@ -94,7 +94,7 @@ sections:
           read_only: false
           show_filename: true
       -
-        import: full_screen_style
+        import: image_style
         prefix: interiors_
   shop:
     display: Shop
@@ -118,8 +118,14 @@ sections:
           read_only: false
           max_files: 1
       -
-        import: full_screen_style
+        import: image_style
         prefix: shop_
+      -
+        import: image_style
+        prefix: 'md:'
+      -
+        import: image_style
+        prefix: 'lg:'
   newsletter:
     display: Newsletter
     fields:
