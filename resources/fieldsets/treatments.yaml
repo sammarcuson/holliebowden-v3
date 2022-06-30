@@ -31,9 +31,9 @@ fields:
       listable: hidden
       instructions_position: above
       read_only: false
+      instructions: 'Applied to mobile and bigger, unless tablet and desktop styles found.'
       if:
         responsive: 'equals true'
-      instructions: 'Applied to mobile and bigger, unless tablet and desktop styles found.'
   -
     import: text_colour
   -
@@ -53,6 +53,7 @@ fields:
       read_only: false
       if:
         responsive: 'equals true'
+      instructions: 'Applied to tablet and desktop, unless desktop styles found.'
   -
     import: image_alignment_md
   -
