@@ -17,7 +17,3 @@ fields:
       read_only: false
   -
     import: treatment_settings
-  -
-    import: treatment_settings_medium
-  -
-    import: treatment_settings_large
