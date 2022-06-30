@@ -21,6 +21,7 @@ fields:
       read_only: false
       if:
         responsive: 'equals false'
+      instructions: 'These settings will be applied to all screen and device sizes.'
   -
     import: text_colour
   -
