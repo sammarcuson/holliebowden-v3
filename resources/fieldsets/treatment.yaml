@@ -1,22 +1,6 @@
 title: Treatment
 fields:
   -
-    handle: treatment_views
-    field:
-      options:
-        sm: Mobile/Default
-        md: Tablet/Mid
-        lg: Laptop/Full
-      inline: true
-      cast_booleans: false
-      default: sm
-      display: Views
-      type: radio
-      icon: radio
-      listable: hidden
-      instructions_position: above
-      read_only: false
-  -
     import: text_colour
   -
     import: image_alignment
