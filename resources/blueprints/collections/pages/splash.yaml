@@ -146,7 +146,7 @@ sections:
           restrict: false
           allow_uploads: true
           show_filename: true
-          display: 'Image Laptop'
+          display: 'Image Laptop/Desktop'
           type: assets
           icon: assets
           listable: hidden
