@@ -29,14 +29,14 @@ fields:
   -
     import: image_alignment_lg
   -
-    import: opacity
-  -
-    import: opacity_md
-  -
-    import: opacity_lg
-  -
     import: overlay
   -
     import: overlay_md
   -
     import: overlay_lg
+  -
+    import: opacity
+  -
+    import: opacity_md
+  -
+    import: opacity_lg
