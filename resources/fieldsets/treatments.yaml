@@ -41,6 +41,8 @@ fields:
   -
     import: overlay
   -
+    import: opacity
+  -
     handle: tablet_styles
     field:
       display: 'Tablet Styles'
@@ -58,8 +60,6 @@ fields:
     import: image_alignment_md
   -
     import: overlay_md
-  -
-    import: opacity
   -
     import: opacity_md
   -
