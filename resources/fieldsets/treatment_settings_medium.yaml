@@ -1,5 +1,5 @@
 title: 'Treatment Settings Medium'
 fields:
   -
-    import: treatment
+    import: treatment_settings
     prefix: 'md:'

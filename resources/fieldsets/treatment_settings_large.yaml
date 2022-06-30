@@ -1,5 +1,5 @@
 title: 'Treatment Settings Large'
 fields:
   -
-    import: treatment
+    import: treatment_settings
     prefix: 'lg:'

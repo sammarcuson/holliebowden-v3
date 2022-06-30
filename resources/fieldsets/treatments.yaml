@@ -1,4 +1,8 @@
 title: Treatments
 fields:
   -
-    import: treatment
+    import: treatment_settings
+  -
+    import: treatment_settings_medium
+  -
+    import: treatment_settings_large
