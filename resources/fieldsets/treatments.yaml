@@ -19,6 +19,8 @@ fields:
       listable: hidden
       instructions_position: above
       read_only: false
+      if:
+        responsive: 'equals false'
   -
     handle: default_styles
     field:
