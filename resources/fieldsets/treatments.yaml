@@ -52,13 +52,3 @@ fields:
     import: opacity_md
   -
     import: opacity_lg
-  -
-    handle: revealer_field
-    field:
-      mode: toggle
-      display: 'Revealer Field'
-      type: revealer
-      icon: revealer
-      listable: hidden
-      instructions_position: above
-      read_only: false
