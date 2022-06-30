@@ -9,7 +9,7 @@ fields:
         lg: Large/Desktop
       inline: true
       cast_booleans: false
-      display: View
+      display: 'View Treatment'
       type: radio
       icon: radio
       listable: hidden
