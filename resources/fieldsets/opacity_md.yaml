@@ -16,3 +16,4 @@ fields:
       read_only: false
       if:
         overlay_md: 'not none'
+        responsive: 'equals true'
