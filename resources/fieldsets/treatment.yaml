@@ -3,6 +3,10 @@ fields:
   -
     handle: treatment_views
     field:
+      options:
+        sm: Mobile/Default
+        md: Tablet/Mid
+        lg: Laptop/Full
       inline: false
       cast_booleans: false
       display: Views
