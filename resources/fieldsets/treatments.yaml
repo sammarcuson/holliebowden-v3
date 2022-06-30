@@ -30,7 +30,7 @@ fields:
   -
     import: image_alignment
   -
-    handle: default_styles
+    handle: mobile_styles
     field:
       display: 'Mobile Styles'
       type: section
