@@ -23,14 +23,6 @@ fields:
         responsive: 'equals false'
       instructions: 'These settings will be applied to all screen and device sizes.'
   -
-    import: text_colour
-  -
-    import: text_colour_md
-  -
-    import: text_colour_lg
-  -
-    import: image_alignment
-  -
     handle: mobile_styles
     field:
       display: 'Mobile Styles'
@@ -41,6 +33,14 @@ fields:
       read_only: false
       if:
         responsive: 'equals true'
+  -
+    import: text_colour
+  -
+    import: text_colour_md
+  -
+    import: text_colour_lg
+  -
+    import: image_alignment
   -
     handle: tablet_styles
     field:
