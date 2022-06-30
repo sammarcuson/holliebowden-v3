@@ -20,3 +20,5 @@ fields:
     import: image_alignment
   -
     import: image_alignment_md
+  -
+    import: image_alignment_lg
