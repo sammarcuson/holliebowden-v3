@@ -1,2 +1,5 @@
 title: 'Treatment Large'
-fields: {  }
+fields:
+  -
+    import: treatment
+    prefix: 'lg:'
