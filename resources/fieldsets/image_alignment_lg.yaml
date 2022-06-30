@@ -1,7 +1,7 @@
 title: 'Image Alignment Large'
 fields:
   -
-    handle: alignment
+    handle: alignment_lg
     field:
       options:
         'lg:object-center': Center

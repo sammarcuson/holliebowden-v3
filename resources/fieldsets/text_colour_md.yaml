@@ -1,7 +1,7 @@
-title: 'Text Colour'
+title: 'Text Colour Medium'
 fields:
   -
-    handle: text_colour
+    handle: text_colour_md
     field:
       options:
         text-black: Black
@@ -17,4 +17,4 @@ fields:
       instructions_position: above
       read_only: false
       if:
-        treatment_view: 'equals sm'
+        treatment_view: 'equals md'
