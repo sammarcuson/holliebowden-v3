@@ -38,6 +38,8 @@ fields:
       listable: hidden
       instructions_position: above
       read_only: false
+      if:
+        responsive: 'equals true'
   -
     import: image_alignment_md
   -
