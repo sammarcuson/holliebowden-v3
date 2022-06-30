@@ -67,3 +67,12 @@ fields:
       if:
         overlay: 'not none'
       width: 25
+  -
+    handle: section_field
+    field:
+      display: 'Section Field'
+      type: section
+      icon: section
+      listable: hidden
+      instructions_position: above
+      read_only: false
