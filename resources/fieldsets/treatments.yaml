@@ -33,7 +33,7 @@ fields:
       read_only: false
       if:
         responsive: 'equals true'
-      instructions: 'Applied to mobile and up, unless tablet and desktop styles set.'
+      instructions: 'Applied to mobile and bigger, unless tablet and desktop styles found.'
   -
     import: text_colour
   -
