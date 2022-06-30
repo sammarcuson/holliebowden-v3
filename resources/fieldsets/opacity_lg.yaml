@@ -15,5 +15,4 @@ fields:
       instructions_position: above
       read_only: false
       if:
-        responsive: 'equals true'
-        overlay_lg: 'not empty'
+        overlay_lg: 'equals lg:light'
