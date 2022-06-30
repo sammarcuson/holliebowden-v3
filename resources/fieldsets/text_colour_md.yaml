@@ -4,9 +4,9 @@ fields:
     handle: text_colour_md
     field:
       options:
-        text-black: Black
-        text-offwhite: White
-      default: text-black
+        'md:text-black': Black
+        'md:text-offwhite': White
+      default: 'md:text-black'
       inline: false
       cast_booleans: false
       display: 'Text Colour'
