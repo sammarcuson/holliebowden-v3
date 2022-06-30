@@ -7,7 +7,6 @@ fields:
       display: Responsive
       type: toggle
       icon: toggle
-      width: 75
       listable: hidden
       instructions_position: above
       read_only: false
@@ -27,7 +26,6 @@ fields:
       instructions_position: above
       read_only: false
       default: sm
-      width: 25
       if:
         responsive: 'equals true'
   -
