@@ -1,2 +1,5 @@
 title: 'Treatment Tablet'
-fields: {  }
+fields:
+  -
+    import: treatment
+    prefix: 'md:'
