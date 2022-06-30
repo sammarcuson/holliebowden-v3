@@ -39,6 +39,8 @@ fields:
   -
     import: image_alignment
   -
+    import: overlay
+  -
     handle: tablet_styles
     field:
       display: 'Tablet Styles'
@@ -54,8 +56,6 @@ fields:
     import: text_colour_md
   -
     import: image_alignment_md
-  -
-    import: overlay
   -
     import: overlay_md
   -
