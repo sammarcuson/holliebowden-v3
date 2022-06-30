@@ -16,7 +16,6 @@ sections:
         handle: slug
         field:
           type: text
-          required: true
           localizable: true
           width: 33
           validate:
@@ -95,6 +94,9 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+      -
+        import: treatments
+        prefix: project_
       -
         import: image_style
         prefix: project_
