@@ -81,3 +81,4 @@ fields:
       read_only: false
       if:
         responsive: 'equals true'
+      instructions: 'Applied to desktop and bigger.'
