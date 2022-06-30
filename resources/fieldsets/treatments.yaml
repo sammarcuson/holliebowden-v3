@@ -17,14 +17,14 @@ fields:
       read_only: false
       default: sm
   -
-    import: image_alignment
-  -
-    import: image_alignment_md
-  -
-    import: image_alignment_lg
-  -
     import: text_colour
   -
     import: text_colour_md
   -
     import: text_colour_lg
+  -
+    import: image_alignment
+  -
+    import: image_alignment_md
+  -
+    import: image_alignment_lg
