@@ -1,4 +1,4 @@
-title: Opacity Large
+title: 'Opacity Large'
 fields:
   -
     handle: opacity_lg
@@ -12,7 +12,8 @@ fields:
       icon: range
       listable: hidden
       width: 25
+      instructions_position: above
+      read_only: false
       if:
         overlay_lg: 'not none'
         responsive: 'equals true'
-

@@ -1,7 +1,7 @@
 title: 'Overlay Large'
 fields:
   -
-    handle: overlay_ld
+    handle: overlay_lg
     field:
       options:
         'lg:none': None
