@@ -103,15 +103,6 @@ sections:
         import: display
         prefix: shop_
       -
-        handle: mobile
-        field:
-          display: Mobile/Default
-          type: section
-          icon: section
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
         handle: shop_image
         field:
           mode: list
