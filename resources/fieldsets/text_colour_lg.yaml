@@ -6,7 +6,6 @@ fields:
       options:
         'lg:text-black': Black
         'lg:text-offwhite': White
-      default: 'lg:text-black'
       inline: false
       cast_booleans: false
       display: 'Text Colour'

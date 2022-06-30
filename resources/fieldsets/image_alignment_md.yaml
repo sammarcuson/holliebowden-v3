@@ -13,7 +13,6 @@ fields:
         'md:object-right-bottom': 'Bottom Right'
         'md:object-right': Right
         'md:object-right-top': 'Top Right'
-      default: object-center
       inline: false
       cast_booleans: false
       display: 'Image Alignment'

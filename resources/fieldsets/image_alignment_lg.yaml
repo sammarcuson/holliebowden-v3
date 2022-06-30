@@ -13,7 +13,6 @@ fields:
         'lg:object-right-bottom': 'Bottom Right'
         'lg:object-right': Right
         'lg:object-right-top': 'Top Right'
-      default: object-center
       inline: false
       cast_booleans: false
       display: 'Image Alignment'

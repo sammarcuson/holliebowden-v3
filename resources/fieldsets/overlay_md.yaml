@@ -7,7 +7,6 @@ fields:
         'md:none': None
         'md:dark': Dark
         'md:light': Light
-      default: 'md:none'
       inline: false
       cast_booleans: false
       display: Overlay
