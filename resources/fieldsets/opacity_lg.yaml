@@ -14,5 +14,6 @@ fields:
       width: 25
       instructions_position: above
       read_only: false
-      if_any:
-        overlay_lg: 'equals lg:dark'
+      if:
+        responsive: 'equals true'
+        overlay_lg: 'not lg:none'

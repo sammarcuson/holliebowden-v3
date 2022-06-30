@@ -7,6 +7,7 @@ fields:
         'lg:none': None
         'lg:dark': Dark
         'lg:light': Light
+      default: lg:none
       inline: false
       cast_booleans: false
       display: Overlay
