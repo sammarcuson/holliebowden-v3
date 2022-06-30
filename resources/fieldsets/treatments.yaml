@@ -1,2 +1,4 @@
 title: Treatments
-fields: {  }
+fields:
+  -
+    import: treatment
