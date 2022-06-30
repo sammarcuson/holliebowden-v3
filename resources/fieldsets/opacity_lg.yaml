@@ -14,5 +14,5 @@ fields:
       width: 25
       if:
         overlay: 'not none'
-        treatment_view: 'equals lg'
+        responsive: 'equals true'
 

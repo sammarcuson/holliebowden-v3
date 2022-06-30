@@ -24,4 +24,4 @@ fields:
       instructions_position: above
       read_only: false
       if:
-        'responsive ': 'equals true'
+        responsive: 'equals true'

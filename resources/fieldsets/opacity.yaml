@@ -16,4 +16,3 @@ fields:
       read_only: false
       if:
         overlay: 'not none'
-        treatment_view: 'equals sm'

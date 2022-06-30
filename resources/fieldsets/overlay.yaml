@@ -17,4 +17,4 @@ fields:
       listable: hidden
       width: 25
       if:
-        treatment_view: 'equals sm'
+        responsive: 'equals true'
