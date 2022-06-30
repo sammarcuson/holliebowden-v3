@@ -1,4 +1,4 @@
-title: Opacity Default
+title: 'Opacity Default'
 fields:
   -
     handle: opacity
@@ -12,6 +12,7 @@ fields:
       icon: range
       listable: hidden
       width: 25
+      instructions_position: above
+      read_only: false
       if:
-        overlay: 'not none'
         treatment_view: 'equals sm'
