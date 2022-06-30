@@ -20,7 +20,7 @@ fields:
       instructions_position: above
       read_only: false
       if:
-        responsive: 'not true'
+        responsive: 'equals true'
   -
     import: text_colour
   -
