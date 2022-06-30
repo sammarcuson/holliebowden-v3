@@ -13,17 +13,6 @@ fields:
   -
     handle: default_styles
     field:
-      display: 'Default Styles'
-      type: section
-      icon: section
-      listable: hidden
-      instructions_position: above
-      read_only: false
-      unless:
-        responsive: 'equals true'
-  -
-    handle: default_styles
-    field:
       display: 'Mobile Styles'
       type: section
       icon: section
