@@ -6,7 +6,6 @@ fields:
       step: 10
       min: 10
       max: 90
-      default: null
       display: Opacity
       type: range
       icon: range
