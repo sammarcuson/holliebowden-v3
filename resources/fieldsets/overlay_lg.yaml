@@ -4,9 +4,10 @@ fields:
     handle: overlay_lg
     field:
       options:
+        '': Inherit
         'lg:none': None
-        'lg:dark': Dark
-        'lg:light': Light
+        'reveal lg:dark': Dark
+        'reveal lg:light': Light
       inline: false
       cast_booleans: false
       display: Overlay
@@ -18,4 +19,4 @@ fields:
       instructions_position: above
       read_only: false
       if:
-        responsive: 'equals true'
+        responsive: true

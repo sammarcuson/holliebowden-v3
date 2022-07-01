@@ -4,6 +4,7 @@ fields:
     handle: alignment_lg
     field:
       options:
+        '': Inherit
         'lg:object-center': Center
         'lg:object-top': Top
         'lg:object-left-top': 'Top Left'

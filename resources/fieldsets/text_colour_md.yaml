@@ -4,6 +4,7 @@ fields:
     handle: text_colour_md
     field:
       options:
+        '': Inherit
         'md:text-black': Black
         'md:text-offwhite': White
       inline: false

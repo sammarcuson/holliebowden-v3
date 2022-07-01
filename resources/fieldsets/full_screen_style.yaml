@@ -1,0 +1,10 @@
+title: 'Treatment Settings'
+fields:
+  -
+    import: text_colour
+  -
+    import: image_alignment
+  -
+    import: overlay
+  -
+    import: opacity

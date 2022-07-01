@@ -4,6 +4,7 @@ fields:
     handle: text_colour_lg
     field:
       options:
+        '': Inherit
         'lg:text-black': Black
         'lg:text-offwhite': White
       inline: false

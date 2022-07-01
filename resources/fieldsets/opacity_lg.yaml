@@ -15,5 +15,5 @@ fields:
       instructions_position: above
       read_only: false
       if:
-      if:
-        responsive: 'equals true'
+        responsive: true
+        overlay_lg: contains reveal

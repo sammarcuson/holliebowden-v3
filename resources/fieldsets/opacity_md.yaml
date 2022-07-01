@@ -14,6 +14,6 @@ fields:
       width: 25
       instructions_position: above
       read_only: false
-      hide_when:
-        overlay_md: contains none
-
+      if:
+        responsive: true
+        overlay_md: contains reveal

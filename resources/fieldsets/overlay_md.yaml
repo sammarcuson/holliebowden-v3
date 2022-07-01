@@ -4,10 +4,10 @@ fields:
     handle: overlay_md
     field:
       options:
+        '': Inherit
         'md:none': None
-        'md:dark': Dark
-        'md:light': Light
-      default: none
+        'reveal md:dark': Dark
+        'reveal md:light': Light
       inline: false
       cast_booleans: false
       display: Overlay
@@ -19,4 +19,4 @@ fields:
       instructions_position: above
       read_only: false
       if:
-        responsive: 'equals true'
+        responsive: true

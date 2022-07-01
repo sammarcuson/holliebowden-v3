@@ -4,6 +4,7 @@ fields:
     handle: alignment_md
     field:
       options:
+        '': Inherit
         'md:object-center': Center
         'md:object-top': Top
         'md:object-left-top': 'Top Left'
