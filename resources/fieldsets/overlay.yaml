@@ -7,7 +7,7 @@ fields:
         none: None
         dark: Dark
         light: Light
-      default: none
+      default: null
       inline: false
       cast_booleans: false
       display: Overlay
