@@ -6,7 +6,7 @@ fields:
       step: 10
       min: 10
       max: 90
-      default: 20
+      default: null
       display: Opacity
       type: range
       icon: range
@@ -14,6 +14,6 @@ fields:
       width: 25
       instructions_position: above
       read_only: false
-      if:
-        responsive: 'equals true'
-        overlay_md: 'not md:none'
+      hide_when:
+        responsive: 'equals false'
+        overlay_md: 'equals md:dark'
