@@ -11,60 +11,62 @@
   </div>
 </div>
 
-<div class="relative grid grid-flow-row grid-cols-1 bg-offwhite h-screen-90 js-show-on-scroll">
-  <div class="absolute inset-0 max-h-screen-90">
+<div class="relative grid grid-flow-row grid-cols-1 bg-offwhite h-screen-80 js-show-on-scroll">
+  <div class="absolute inset-0 max-h-screen-80">
     {{ if interiors_overlay != "none" and interiors_overlay != null }}
-    <div class="absolute inset-0 {{ if interiors_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ interiors_opacity }} md:bg-transparent">
+    <div class="absolute inset-0 {{ if interiors_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ interiors_opacity }}"> 
     </div>
     {{ /if }}
-    <img class="h-full w-full max-h-screen-90 object-cover {{ interiors_alignment }}" src="{{ glide:interiors_image width="1600" height="1600" fit="contain" fm="jpg" }}" alt="">
+    <img class="h-full w-full max-h-screen-80 object-cover {{ interiors_alignment }}" src="{{ glide:interiors_image width="1600" height="1600" fit="contain" fm="jpg" }}" alt="">
   </div>
   <a href="/interiors" class="absolute inset-0 {{ interiors_text_colour }}">
-    <h1 class="absolute text-6xl sm:text-6xl font-thin mb-0 bottom-10 sm:bottom-20 right-10 sm:right-16 inline-flex items-end js-show-on-scroll">interiors   <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <h1 class="absolute text-6xl sm:text-6xl font-thin mb-0 bottom-10 sm:bottom-20 right-10 sm:right-16 inline-flex items-end js-show-on-scroll {{ interiors_text_colour }}">interiors   <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 {{ interiors_text_colour }}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9 5l7 7-7 7" />
       </svg></h1>
   </a>
 </div>
 
-{{ if display_profile == true }}
-<div class="relative bg-black md:grid grid-flow-row grid-cols-1 md:grid-cols-2 h-screen-90">
-  <div class="bg-black max-h-screen-90">
-    {{ if profile_overlay != "none" and profile_overlay != null }}
-    <div class="absolute inset-0 {{ if profile_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ profile_opacity }} md:bg-transparent">
+{{ if shop_display }}
+<div class="relative grid grid-flow-row grid-cols-1 bg-offwhite h-screen-80 js-show-on-scroll">
+  <div class="absolute inset-0 max-h-screen-80">
+    {{ if shop_overlay != "none" }}
+    <div class="absolute inset-0 {{ if shop_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ shop_opacity }}"> 
     </div>
     {{ /if }}
-    <img src="{{ glide:profile_image width="900" height="900" fit="contain" fm="jpg" }}" class="h-full w-full max-h-screen-90 object-cover {{ profile_alignment }}" alt="">
+    <img class="h-full w-full max-h-screen-80 object-cover {{ shop_alignment }} {{ shop_alignment_md }} {{ shop_alignment_lg }}" src="{{ glide:shop_image width="1600" height="1600" fit="contain" fm="jpg" }}" alt="">
   </div>
-  <a href="/about" class="absolute inset-0 max-h-screen-90 md:relative pt-36 sm:pt-36 px-10 sm:px-16 md:p-20 flex items-start md:items-center md:bg-black">
-    <div class="text-3xl sm:text-4xl font-louizeDisplay {{ profile_text_colour }} md:text-offwhite js-show-on-scroll">{{ quote }}</div>
+  <a href="https://shop.holliebowden.com" class="absolute inset-0 {{ shop_text_colour }}">
+    <h1 class="absolute text-6xl sm:text-6xl font-thin mb-0 bottom-10 sm:bottom-20 left-10 sm:left-16 inline-flex items-end js-show-on-scroll"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 {{ shop_text_colour }}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M15 19l-7-7 7-7" />
+    </svg>   shop</h1>
   </a>
 </div>
 {{ /if }}
 
 
-{{ if shop_display == true }}
-<div class="relative grid grid-flow-row grid-cols-1 h-screen-90 js-show-on-scroll">
+
+{{ if newsletter_display }}
+<div class="relative grid grid-flow-row grid-cols-1 h-screen-80 js-show-on-scroll">
   <div class="absolute inset-0 flex items-center">
     <div class="w-full text-center p-16 flex flex-col items-center js-show-on-scroll">
-      {{ if shop_image }}
-      <img src="{{ glide:shop_image fit="contain" fm="png" }}" class="w-24 m-auto mb-6" alt="">{{ /if }}
-      {{ if shop_heading }}
-      <h1 class="text-3xl text-center inline-block sm:text-6xl font-thin text-black mb-6">{{ shop_heading }}</h1>{{ /if }}
-      {{ if shop_body }}
-      <div class="text-xl mb-6 max-w-lg">
-        {{ shop_body }}
-      </div>
+      {{ if newsletter_heading }}
+        <h1 class="text-3xl text-center inline-block sm:text-6xl font-thin text-black mb-6">{{ newsletter_heading }}</h1>
       {{ /if }}
-      {{ if shop_cta_link && shop_cta_text }}
-        <a href="{{ shop_cta_link }}" class="cursor-pointer inline-flex items-center px-4 py-2 text-base font-medium rounded-sm shadow-sm text-offwhite bg-black hover:bg-lightblack text-black transition-colors">{{ shop_cta_text }}</a>
+
+      {{ if newsletter_body }}
+        <div class="text-xl mb-6 max-w-lg">
+          {{ newsletter_body }}
+        </div>
       {{ /if }}
+      <a href="{{ newsletter_cta_link }}" class="cursor-pointer inline-flex items-center px-4 py-2 text-base font-medium rounded-sm shadow-sm text-offwhite bg-black hover:bg-lightblack text-black transition-colors">{{ newsletter_cta_text }}</a>
     </div>
   </div>
 </div>
 {{ /if }}
 
-<script type="text/javascript">
 
+
+<script type="text/javascript">
   // Fade in on scroll
     const callback = function (entries) {
     entries.forEach((entry) => {
@@ -77,13 +79,10 @@
       }
     });
   };
-
   const observer = new IntersectionObserver(callback);
-
   const targets = document.querySelectorAll(".js-show-on-scroll");
   targets.forEach(function (target) {
     target.classList.add("opacity-0");
     observer.observe(target);
   });
-
 </script>

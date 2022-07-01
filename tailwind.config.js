@@ -73,8 +73,14 @@ module.exports = {
         '52': '13rem',
       },
       maxHeight: {
-        'max-h-75': '75%',
-        'max-h-screen-90': '90vh',
+        'screen-75': '75vh',
+        'screen-80': '80vh',
+        'screen-90': '90vh',
+      },
+      height: {
+        'screen-75': '75vh',
+        'screen-80': '80vh',
+        'screen-90': '90vh',
       },
       fontSize: {
         '1xs': ['0.5rem', '0.75rem'],

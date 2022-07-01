@@ -1,0 +1,18 @@
+title: Overlay
+fields:
+  -
+    handle: overlay
+    field:
+      options:
+        none: None
+        dark: Dark
+        light: Light
+      default: none
+      inline: false
+      cast_booleans: false
+      display: Overlay
+      type: radio
+      icon: radio
+      instructions: 'Adds an overlay the lead image.'
+      listable: hidden
+      width: 25

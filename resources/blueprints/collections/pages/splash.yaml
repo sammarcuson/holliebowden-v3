@@ -29,7 +29,7 @@ sections:
           restrict: false
           allow_uploads: true
       -
-        import: full_screen_style
+        import: treatments
         prefix: title_
   profile:
     display: Profile
@@ -41,21 +41,6 @@ sections:
           type: toggle
           icon: toggle
           listable: hidden
-      -
-        handle: profile_image
-        field:
-          mode: grid
-          container: assets
-          restrict: false
-          allow_uploads: true
-          max_files: 1
-          display: 'Profile Image'
-          type: assets
-          icon: assets
-          listable: hidden
-      -
-        import: full_screen_style
-        prefix: profile_
       -
         handle: quote
         field:
@@ -72,6 +57,24 @@ sections:
           type: link
           icon: link
           listable: hidden
+      -
+        handle: profile_image
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          show_filename: true
+      -
+        import: treatments
+        prefix: profile_
   interiors:
     display: Interiors
     fields:
@@ -83,40 +86,16 @@ sections:
           restrict: false
           allow_uploads: true
           max_files: 1
-          display: 'Interiors Image'
+          display: Image
           type: assets
           icon: assets
           listable: hidden
+          instructions_position: above
+          read_only: false
+          show_filename: true
       -
-        import: full_screen_style
+        import: treatments
         prefix: interiors_
-  sidebar:
-    display: Sidebar
-    fields:
-      -
-        handle: slug
-        field:
-          type: slug
-          required: true
-          localizable: true
-          validate:
-            - required
-      -
-        handle: date
-        field:
-          type: date
-          required: true
-          validate:
-            - required
-      -
-        handle: parent
-        field:
-          type: entries
-          collections:
-            - pages
-          max_items: 1
-          listable: false
-          localizable: true
   shop:
     display: Shop
     fields:
@@ -126,16 +105,29 @@ sections:
       -
         handle: shop_image
         field:
-          mode: grid
+          mode: list
+          container: assets
           restrict: false
           allow_uploads: true
-          max_files: 1
+          show_filename: true
           display: Image
           type: assets
           icon: assets
           listable: hidden
+          instructions_position: above
+          read_only: false
+          max_files: 1
       -
-        handle: shop_heading
+        import: treatments
+        prefix: shop_
+  newsletter:
+    display: Newsletter
+    fields:
+      -
+        import: display
+        prefix: newsletter_
+      -
+        handle: newsletter_heading
         field:
           input_type: text
           antlers: false
@@ -143,8 +135,10 @@ sections:
           type: text
           icon: text
           listable: hidden
+          instructions_position: above
+          read_only: false
       -
-        handle: shop_body
+        handle: newsletter_body
         field:
           always_show_set_button: false
           buttons:
@@ -165,6 +159,38 @@ sections:
           type: bard
           icon: bard
           listable: hidden
+          instructions_position: above
+          read_only: false
+          antlers: false
       -
         import: cta
-        prefix: shop_
+        prefix: newsletter_
+      -
+        import: display
+        prefix: newsletter_
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

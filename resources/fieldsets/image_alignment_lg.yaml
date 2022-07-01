@@ -1,0 +1,27 @@
+title: 'Image Alignment Large'
+fields:
+  -
+    handle: alignment_lg
+    field:
+      options:
+        '': Inherit
+        'lg:object-center': Center
+        'lg:object-top': Top
+        'lg:object-left-top': 'Top Left'
+        'lg:object-left': Left
+        'lg:object-left-bottom': 'Bottom Left'
+        'lg:object-bottom': Bottom
+        'lg:object-right-bottom': 'Bottom Right'
+        'lg:object-right': Right
+        'lg:object-right-top': 'Top Right'
+      inline: false
+      cast_booleans: false
+      display: 'Image Alignment'
+      type: radio
+      icon: radio
+      listable: hidden
+      width: 25
+      instructions_position: above
+      read_only: false
+      if:
+        responsive: 'equals true'

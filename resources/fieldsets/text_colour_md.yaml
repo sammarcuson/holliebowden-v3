@@ -1,0 +1,20 @@
+title: 'Text Colour Medium'
+fields:
+  -
+    handle: text_colour_md
+    field:
+      options:
+        '': Inherit
+        'md:text-black': Black
+        'md:text-offwhite': White
+      inline: false
+      cast_booleans: false
+      display: 'Text Colour'
+      type: radio
+      icon: radio
+      listable: hidden
+      width: 25
+      instructions_position: above
+      read_only: false
+      if:
+        responsive: 'equals true'
