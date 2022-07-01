@@ -1,0 +1,18 @@
+title: 'Opacity Default'
+fields:
+  -
+    handle: opacity
+    field:
+      step: 10
+      min: 10
+      max: 90
+      default: 20
+      display: Opacity
+      type: range
+      icon: range
+      listable: hidden
+      width: 25
+      instructions_position: above
+      read_only: false
+      if:
+        overlay: 'not none'

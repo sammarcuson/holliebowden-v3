@@ -1,0 +1,22 @@
+title: 'Overlay Large'
+fields:
+  -
+    handle: overlay_lg
+    field:
+      options:
+        '': Inherit
+        'lg:none': None
+        'reveal lg:dark': Dark
+        'reveal lg:light': Light
+      inline: false
+      cast_booleans: false
+      display: Overlay
+      type: radio
+      icon: radio
+      instructions: 'Adds an overlay the lead image.'
+      listable: hidden
+      width: 25
+      instructions_position: above
+      read_only: false
+      if:
+        responsive: true

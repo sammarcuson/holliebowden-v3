@@ -1,0 +1,84 @@
+title: Treatments
+fields:
+  -
+    handle: responsive
+    field:
+      default: false
+      display: Responsive
+      type: toggle
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: default_styles
+    field:
+      display: 'Default Styles'
+      type: section
+      icon: section
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      if:
+        responsive: 'equals false'
+      instructions: 'These settings will be applied to all screen and device sizes.'
+  -
+    handle: mobile_styles
+    field:
+      display: 'Mobile Styles'
+      type: section
+      icon: section
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      instructions: 'Applied to mobile and bigger, unless tablet and desktop styles found.'
+      if:
+        responsive: 'equals true'
+  -
+    import: text_colour
+  -
+    import: image_alignment
+  -
+    import: overlay
+  -
+    import: opacity
+  -
+    handle: tablet_styles
+    field:
+      display: 'Tablet Styles'
+      type: section
+      icon: section
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      if:
+        responsive: 'equals true'
+      instructions: 'Applied to tablet and desktop, unless desktop styles found.'
+  -
+    import: text_colour_md
+  -
+    import: image_alignment_md
+  -
+    import: overlay_md
+  -
+    import: opacity_md
+  -
+    handle: desktop_styles
+    field:
+      display: 'Desktop Styles'
+      type: section
+      icon: section
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      if:
+        responsive: 'equals true'
+      instructions: 'Applied to desktop and bigger.'
+  -
+    import: text_colour_lg
+  -
+    import: image_alignment_lg
+  -
+    import: overlay_lg
+  -
+    import: opacity_lg
