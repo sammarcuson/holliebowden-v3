@@ -7,7 +7,9 @@
   </div>
   {{ /if }}
   <div class="absolute inset-0 {{ title_text_colour }}">
-    <h1 class="absolute uppercase text-5xl sm:text-6xl md:text-7xl font-thin  mb-0 bottom-16 sm:bottom-20 left-10 sm:left-16">Hollie<br/>Bowden</h1>
+    <a href="/about">
+      <h1 class="absolute uppercase text-5xl sm:text-6xl md:text-7xl font-thin mb-0 bottom-16 sm:bottom-20 left-10 sm:left-16">Hollie<br/>Bowden</h1>
+    </a>
   </div>
 </div>
 
@@ -42,6 +44,23 @@
   </a>
 </div>
 {{ /if }}
+
+
+{{ if display_profile == true }}
+<div class="relative bg-black md:grid grid-flow-row grid-cols-1 md:grid-cols-2 h-screen-90">
+  <div class="bg-black max-h-screen-90">
+    {{ if profile_overlay != "none" and profile_overlay != null }}
+    <div class="absolute inset-0 {{ if profile_overlay == "dark" }}bg-black{{ else }}bg-offwhite{{ /if }} opacity-{{ profile_opacity }} md:bg-transparent">
+    </div>
+    {{ /if }}
+    <img src="{{ glide:profile_image width="900" height="900" fit="contain" fm="jpg" }}" class="h-full w-full max-h-screen-90 object-cover {{ profile_alignment }}" alt="">
+  </div>
+  <a href="/about" class="absolute inset-0 max-h-screen-90 md:relative pt-36 sm:pt-36 px-10 sm:px-16 md:p-20 flex items-start md:items-center md:bg-black">
+    <div class="text-3xl sm:text-4xl font-louizeDisplay {{ profile_text_colour }} md:text-offwhite js-show-on-scroll">{{ quote }}</div>
+  </a>
+</div>
+{{ /if }}
+
 
 
 
